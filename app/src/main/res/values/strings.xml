@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Add foods</string>
+    <string name="Topic1">Special Categories</string>
+    <string name="Special1">Sri Lankan</string>
+    <string name="Topic2">Top Categories</string>
+    <string name="Topic3">More Categories</string>
+    <string name="Topic4">Recipe Card</string>
+    <string name="Topic5">European</string>
+    <string name="Topic6">Indian</string>
+    <string name="Topic7">Indonesian</string>
+    <string name="Topic8">Chinese</string>
+    <string name="Topic9">Russian</string>
+    <string name="More1">Desserts</string>
+    <string name="More2">Fast Foods</string>
+    <string name="More3">Drinks and Smoothies</string>
+    <string name="More4">Pizza</string>
+    <string name="More5">Grocery</string>
+    <string name="More6">Bakery</string>
+    <string name="Top1">Chicken Rice</string>
+    <string name="Top2">Sea Foods</string>
+    <string name="Top3">Vegetarian</string>
+    <string name="Top4">Rice and Curry</string>
+    <string name="Top5">Fried Rice</string>
+    <string name="Top6">Biriyani</string>
+    <string name="Button">Next</string>
+    <string name="title">Title</string>
+    <string name="item_ID">Item ID</string>
+</resources>
