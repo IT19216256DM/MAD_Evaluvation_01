@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">OrderUs</string>
+    <string name="Msg1">Name : The Galadari Hotel</string>
+    <string name="Msg2">Address : 64 Lotus Rd, Colombo 00100</string>
+    <string name="Msg3">Phone 0112544544</string>
+    <string name="Msg4">Email : info@galadarihotel.lk</string>
+    <string name="Msg5">Owner/Contact Person : 0717892357</string>
+    <string name="Msg6">Address : 87 New Galle Rd,Colombo 03</string>
+    <string name="Msg7">Phone : 0112652231</string>
+    <string name="Msg8">Email : info@galadarilite.lk</string>
+    <string name="Msg9">Owner/ Contact Person : 0777548936</string>
+
+
+</resources>
