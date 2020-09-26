@@ -86,13 +86,13 @@ public class Page3 extends AppCompatActivity {
                     //feedback from database
                     Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT).show();
 
-                    String data1 = txtTitle.getText().toString();
-                   String data2 = txtAuthor.getText().toString();
-                    String data3 = txtPrice.getText().toString();
-                    String data4 = txtServings.getText().toString();
-                    String data5 = txtPreparation.getText().toString();
-                    String data6 = txtCook.getText().toString();
-                   String data7 = txtTotal.getText().toString();
+//                    String data1 = txtTitle.getText().toString();
+//                   String data2 = txtAuthor.getText().toString();
+//                    String data3 = txtPrice.getText().toString();
+//                    String data4 = txtServings.getText().toString();
+//                    String data5 = txtPreparation.getText().toString();
+//                    String data6 = txtCook.getText().toString();
+//                   String data7 = txtTotal.getText().toString();
 
 //                   Intent i = new Intent(getApplicationContext(),Page5.class);
 //                    clearControls();
