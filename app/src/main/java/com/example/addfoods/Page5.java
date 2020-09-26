@@ -16,7 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 public class Page5 extends AppCompatActivity {
 
     TextView title, author, price, servings, preparation, cook, total;
-    Button button;
+    Button butsub;
     DatabaseReference dbRef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,8 @@ public class Page5 extends AppCompatActivity {
         cook = findViewById(R.id.viewCooktime);
         total = findViewById(R.id.viewTotaltime);
 
-        button = findViewById(R.id.buttonedit);
+
+        butsub = findViewById(R.id.buttonedit);
 
         String ti = getIntent().getStringExtra("ti");
         String au = getIntent().getStringExtra("au");
@@ -58,7 +59,7 @@ public class Page5 extends AppCompatActivity {
         cook.setText(co);
         total.setText(to);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        butsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
