@@ -20,13 +20,6 @@
         android:textColorLink="@android:color/background_dark"
         android:textSize="36sp" />
 
-    <ImageView
-        android:layout_width="190dp"
-        android:layout_height="190dp"
-        android:layout_gravity="center"
-        android:padding="20dp"
-        android:src="@drawable/cheese" />
-
     <EditText
         android:id="@+id/viewTitle"
         android:layout_width="match_parent"
