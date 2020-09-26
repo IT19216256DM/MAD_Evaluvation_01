@@ -16,6 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 public class Page5 extends AppCompatActivity {
 
     TextView title, author, price, servings, preparation, cook, total;
+    Button button;
     DatabaseReference dbRef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,8 @@ public class Page5 extends AppCompatActivity {
         cook = findViewById(R.id.viewCooktime);
         total = findViewById(R.id.viewTotaltime);
 
+        button = findViewById(R.id.buttonedit);
+
         String ti = getIntent().getStringExtra("ti");
         String au = getIntent().getStringExtra("au");
         String pr = getIntent().getStringExtra("pr");
@@ -55,28 +58,32 @@ public class Page5 extends AppCompatActivity {
         cook.setText(co);
         total.setText(to);
 
-//        String tit = title.getText().toString();
-//        String aur = author.getText().toString();
-//        String pri = price.getText().toString();
-//        String ser = servings.getText().toString();
-//        String pre = preparation.getText().toString();
-//        String cok = cook.getText().toString();
-//        String tot = total.getText().toString();
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-//        Intent i =new Intent(getApplicationContext(),MainActivity.class);
-//
-//        i.putExtra("ti",tit);
-//        i.putExtra("au",aur);
-//        i.putExtra("pr",pri);
-//        i.putExtra("se",ser);
-//        i.putExtra("pt",pre);
-//        i.putExtra("co",cok);
-//        i.putExtra("to",tot);
-//
-//        startActivity(i);
+                String tit = title.getText().toString();
+                String aur = author.getText().toString();
+                String pri = price.getText().toString();
+                String ser = servings.getText().toString();
+                String pre = preparation.getText().toString();
+                String cok = cook.getText().toString();
+                String tot = total.getText().toString();
 
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
 
-    }
+                i.putExtra("ti", tit);
+                i.putExtra("au", aur);
+                i.putExtra("pr", pri);
+                i.putExtra("se", ser);
+                i.putExtra("pt", pre);
+                i.putExtra("co", cok);
+                i.putExtra("to", tot);
 
+                startActivity(i);
+            }
 
+            });
+
+        }
 }
