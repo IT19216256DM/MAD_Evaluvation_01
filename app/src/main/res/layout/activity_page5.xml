@@ -22,8 +22,8 @@
 
     <ImageView
         android:id="@+id/uploadedImg"
-        android:layout_width="210dp"
-        android:layout_height="200dp"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
         android:padding="20dp"
         android:src="@drawable/imageicon" />
@@ -80,7 +80,7 @@
     <Button
         android:id="@+id/buttonedit"
         android:layout_width="150dp"
-        android:layout_height="65dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:background="@drawable/button_backg"
         android:text="@string/Editbtn"
