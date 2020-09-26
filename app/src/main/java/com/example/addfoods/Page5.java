@@ -55,25 +55,25 @@ public class Page5 extends AppCompatActivity {
         cook.setText(co);
         total.setText(to);
 
-        String tit = title.getText().toString();
-        String aur = author.getText().toString();
-        String pri = price.getText().toString();
-        String ser = servings.getText().toString();
-        String pre = preparation.getText().toString();
-        String cok = cook.getText().toString();
-        String tot = total.getText().toString();
+//        String tit = title.getText().toString();
+//        String aur = author.getText().toString();
+//        String pri = price.getText().toString();
+//        String ser = servings.getText().toString();
+//        String pre = preparation.getText().toString();
+//        String cok = cook.getText().toString();
+//        String tot = total.getText().toString();
 
-        Intent i =new Intent(getApplicationContext(),MainActivity.class);
-
-        i.putExtra("ti",tit);
-        i.putExtra("au",aur);
-        i.putExtra("pr",pri);
-        i.putExtra("se",ser);
-        i.putExtra("pt",pre);
-        i.putExtra("co",cok);
-        i.putExtra("to",tot);
-
-        startActivity(i);
+//        Intent i =new Intent(getApplicationContext(),MainActivity.class);
+//
+//        i.putExtra("ti",tit);
+//        i.putExtra("au",aur);
+//        i.putExtra("pr",pri);
+//        i.putExtra("se",ser);
+//        i.putExtra("pt",pre);
+//        i.putExtra("co",cok);
+//        i.putExtra("to",tot);
+//
+//        startActivity(i);
 
 
     }
