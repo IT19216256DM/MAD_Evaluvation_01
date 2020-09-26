@@ -44,4 +44,6 @@
     <string name="menufood">Food Menu</string>
     <string name="addbtn">ADD DATA</string>
     <string name="topicnew">Food Details</string>
+    <string name="submitdata">SUBMIT</string>
+    <string name="detailssave">SAVE DETAILS</string>
 </resources>
