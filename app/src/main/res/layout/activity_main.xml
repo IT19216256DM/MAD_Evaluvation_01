@@ -25,25 +25,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/adding" />
 
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="130dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="449dp"
-        android:layout_marginEnd="204dp"
-        android:layout_marginRight="204dp"
-        android:layout_marginBottom="132dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Myfoodbtn"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/waiternew" />
-
     <Button
         android:id="@+id/Addfoodbtn"
         android:layout_width="145dp"
