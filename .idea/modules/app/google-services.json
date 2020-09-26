@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "695336652580",
+    "firebase_url": "https://reservrooms.firebaseio.com",
+    "project_id": "reservrooms",
+    "storage_bucket": "reservrooms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695336652580:android:038cd08bcc3d5a42252db1",
+        "android_client_info": {
+          "package_name": "com.example.reserv_rooms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695336652580-sg90s4tkll6mckda2d4drlnfinsj5ciu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reserv_rooms",
+            "certificate_hash": "fe042a7cdacb06ce3b4a8c3b7e01c22603d918ed"
+          }
+        },
+        {
+          "client_id": "695336652580-3e46gl4hgouu2b58liopdr7gj6cad7c5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmP0KtInQ9oCecBD1gtLRJFqonNE_cQ9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695336652580-3e46gl4hgouu2b58liopdr7gj6cad7c5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

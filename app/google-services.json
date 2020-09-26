@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "936511994738",
+    "firebase_url": "https://reservation-4e725.firebaseio.com",
+    "project_id": "reservation-4e725",
+    "storage_bucket": "reservation-4e725.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936511994738:android:2d5e449689131a062f3beb",
+        "android_client_info": {
+          "package_name": "com.example.reserv_rooms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936511994738-7m7o875jini1oduqj6hqd83q0896887k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVYDjT_ffTGpfySJVzUCBNRlicJhKMIk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936511994738-7m7o875jini1oduqj6hqd83q0896887k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
