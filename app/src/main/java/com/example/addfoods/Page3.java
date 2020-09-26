@@ -86,26 +86,26 @@ public class Page3 extends AppCompatActivity {
                     //feedback from database
                     Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT).show();
 
-//                    String data1 = txtTitle.getText().toString();
-//                    String data2 = txtAuthor.getText().toString();
-//                    String data3 = txtPrice.getText().toString();
-//                    String data4 = txtServings.getText().toString();
-//                    String data5 = txtPreparation.getText().toString();
-//                    String data6 = txtCook.getText().toString();
-//                    String data7 = txtTotal.getText().toString();
-//
-//                    Intent i = new Intent(getApplicationContext(),Page5.class);
+                    String data1 = txtTitle.getText().toString();
+                   String data2 = txtAuthor.getText().toString();
+                    String data3 = txtPrice.getText().toString();
+                    String data4 = txtServings.getText().toString();
+                    String data5 = txtPreparation.getText().toString();
+                    String data6 = txtCook.getText().toString();
+                   String data7 = txtTotal.getText().toString();
+
+                   Intent i = new Intent(getApplicationContext(),Page5.class);
                     clearControls();
-//
-//                    i.putExtra("ti",data1);
-//                    i.putExtra("au",data2);
-//                    i.putExtra("pr",data3);
-//                    i.putExtra("se",data4);
-//                    i.putExtra("pt",data5);
-//                    i.putExtra("co",data6);
-//                    i.putExtra("to",data7);
-//
-//                    startActivity(i);
+
+                    i.putExtra("ti",data1);
+                    i.putExtra("au",data2);
+                    i.putExtra("pr",data3);
+                    i.putExtra("se",data4);
+                    i.putExtra("pt",data5);
+                    i.putExtra("co",data6);
+                    i.putExtra("to",data7);
+
+                    startActivity(i);
                 }
 
 
