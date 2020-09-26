@@ -13,7 +13,7 @@
         android:background="@drawable/back"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
-        tools:context=".insert"
+        tools:context=".Page3"
         tools:layout_editor_absoluteX="-3dp">
 
 

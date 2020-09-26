@@ -2,11 +2,15 @@ package com.example.addfoods;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
-public class MainActivity extends AppCompatActivity{
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
     public Button button;
 
 
@@ -19,30 +23,61 @@ public class MainActivity extends AppCompatActivity{
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MainActivity.this, insert.class);
+                Intent intent =new Intent(MainActivity.this,Page3.class);
                 startActivity(intent);
+
+                Context context = getApplicationContext();
+                CharSequence message = "Add food details";
+
+
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, message, duration);
+                toast.show();
+                toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, 0);
             }
         });
 
+        //2nd btn
         button = (Button) findViewById(R.id.Editfoodbtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MainActivity.this,Page4.class);
+                Intent intent =new Intent(MainActivity.this, Page4.class);
                 startActivity(intent);
+
+                Context context = getApplicationContext();
+                CharSequence message = "Edit food details";
+
+
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, message, duration);
+                toast.show();
+                toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, 0);
             }
         });
 
+        //3rd button
         button = (Button) findViewById(R.id.Myfoodbtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MainActivity.this,Pagex.class);
+                Intent intent =new Intent(MainActivity.this, Page4.class);
                 startActivity(intent);
+
+                Context context = getApplicationContext();
+                CharSequence message = "Search food details";
+
+
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, message, duration);
+                toast.show();
+                toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, 0);
             }
         });
+
+
     }
-
-
-
 }

@@ -17,7 +17,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class insert extends AppCompatActivity {
+public class Page3 extends AppCompatActivity {
 
     EditText txtTitle, txtAuthor, txtPrice, txtServings, txtPreparation, txtCook, txtTotal;
     Button butAdd;
@@ -52,15 +52,6 @@ public class insert extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-//add
         butAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -93,7 +84,7 @@ public class insert extends AppCompatActivity {
                     dbRef.push().setValue(usr);
 
                     //feedback from database
-                    Toast.makeText(getApplicationContext(),"Data saved successfully", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT).show();
 
 //                    String data1 = txtTitle.getText().toString();
 //                    String data2 = txtAuthor.getText().toString();
@@ -104,7 +95,7 @@ public class insert extends AppCompatActivity {
 //                    String data7 = txtTotal.getText().toString();
 //
 //                    Intent i = new Intent(getApplicationContext(),Page5.class);
-//                    clearControls();
+                    clearControls();
 //
 //                    i.putExtra("ti",data1);
 //                    i.putExtra("au",data2);
