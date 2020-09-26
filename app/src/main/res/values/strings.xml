@@ -25,4 +25,21 @@
     <string name="Button">Next</string>
     <string name="title">Title</string>
     <string name="item_ID">Item ID</string>
+    <string name="hintTitle">Enter Title</string>
+    <string name="hintAuthor">Enter Author</string>
+    <string name="hintPrice">Enter Price</string>
+    <string name="hintServings">Enter Servings</string>
+    <string name="hintPreparation">Enter Preparation Time</string>
+    <string name="hintCooktime">Enter Cook Time</string>
+    <string name="hintTotaltime">Enter Total Time</string>
+    <string name="Addbtn">ADD RECEIPE</string>
+    <string name="Showbtn">Show Data</string>
+    <string name="Deletebtn">DELETE RECIPE</string>
+    <string name="Editbtn">EDIT DETAILS</string>
+    <string name="topic4">Food Summary</string>
+    <string name="maintopic">Main Menu</string>
+    <string name="buttonAddfood">ADD FOODS</string>
+    <string name="buttoneditfood">EDIT FOODS</string>
+    <string name="buttonmyfood">MY FOODS</string>
+    <string name="menufood">Food Menu</string>
 </resources>

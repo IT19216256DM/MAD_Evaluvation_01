@@ -8,12 +8,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/Topic4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/darker_gray"
+        android:layout_width="414dp"
+        android:layout_height="703dp"
+        android:background="@drawable/back"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
-        tools:context=".Page3">
+        tools:context=".insert"
+        tools:layout_editor_absoluteX="-3dp">
 
 
         <!--    <LinearLayout-->
@@ -265,3 +266,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+

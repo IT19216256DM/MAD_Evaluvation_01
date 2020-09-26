@@ -5,7 +5,7 @@
     android:id="@+id/Topic4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
+    android:background="@drawable/back"
     android:orientation="vertical"
     tools:context=".Page5">
 
@@ -13,8 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/Topic4"
-        android:textColor="?attr/colorBackgroundFloating"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/topic4"
+        android:textColor="@android:color/holo_green_dark"
         android:textColorLink="@android:color/background_dark"
         android:textSize="36sp" />
 
@@ -26,53 +27,71 @@
         android:src="@drawable/cheese" />
 
     <EditText
+        android:id="@+id/viewTitle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Cheese Kottu"
-        android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/viewAuthor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Red Lantern Resturent"
-        android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:ems="10"
+        android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/viewPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="380 LKR"
-        android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:ems="10"
+        android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/viewServings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="2 person"
-        android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:ems="10"
+        android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/viewPreparationtime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="3 mins"
-        android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:ems="10"
+        android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/viewCooktime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="7 mins"
-        android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:ems="10"
+        android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/viewTotaltime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="10 mins"
-        android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/Editbtn"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/holo_green_dark" />
+
+    <Button
+        android:id="@+id/buttondelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/Deletebtn"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/holo_green_dark" />
 
 
     <!--    <LinearLayout-->
@@ -113,14 +132,6 @@
     <!--            android:layout_width="wrap_content"-->
     <!--            android:layout_height="wrap_content"-->
     <!--            android:text="Total Time"/>-->
-
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Edit Details" />
 
 
 </LinearLayout>

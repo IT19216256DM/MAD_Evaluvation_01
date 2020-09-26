@@ -5,18 +5,19 @@
     android:id="@+id/Topic4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
+    android:background="@drawable/back"
     android:orientation="vertical"
-    tools:context=".Page3">
+    tools:context=".insert">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="center|center_horizontal"
+        android:fontFamily="sans-serif-black"
         android:text="@string/Topic4"
-        android:textColor="?attr/colorBackgroundFloating"
+        android:textColor="@android:color/holo_green_dark"
         android:textColorLink="@android:color/background_dark"
-        android:textSize="36sp" />
+        android:textSize="37sp" />
 
     <ImageView
         android:layout_width="150dp"
@@ -26,101 +27,81 @@
         android:src="@drawable/icon" />
 
     <EditText
+        android:id="@+id/Ettitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Title"
+        android:hint="@string/hintTitle"
         android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
 
     <EditText
+        android:id="@+id/Etauthor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Author"
+        android:hint="@string/hintAuthor"
         android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
 
     <EditText
+        android:id="@+id/Etprice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Price"
+        android:hint="@string/hintPrice"
         android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
 
     <EditText
+        android:id="@+id/Etservings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Servings"
+        android:hint="@string/hintServings"
         android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
 
     <EditText
+        android:id="@+id/Etpreparation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Preparation Time"
+        android:hint="@string/hintPreparation"
         android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
 
     <EditText
+        android:id="@+id/Etcook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Cook time"
+        android:hint="@string/hintCooktime"
         android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
 
     <EditText
+        android:id="@+id/Ettotal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Total Time"
+        android:hint="@string/hintTotaltime"
         android:padding="10dp"
-        android:textColorHint="@android:color/background_dark" />
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
 
 
-    <!--    <LinearLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="50dp"-->
-    <!--        android:layout_weight="1"-->
-    <!--        android:layout_gravity="bottom"-->
-    <!--        android:orientation="horizontal"-->
-    <!--        android:paddingBottom="5dp"-->
-    <!--        android:paddingLeft="5dp"-->
-    <!--        android:paddingRight="35dp"-->
-    <!--        >-->
-
-
-    <!--        <EditText-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:text="Perp Time"/>-->
-
-    <!--        <Space-->
-    <!--            android:layout_width="0dp"-->
-    <!--            android:layout_height="match_parent"-->
-    <!--            android:layout_weight="2"/>-->
-
-
-    <!--            <EditText-->
-    <!--                android:layout_width="wrap_content"-->
-    <!--                android:layout_height="wrap_content"-->
-    <!--                android:text="Cook Time"/>-->
-
-
-    <!--        <Space-->
-    <!--            android:layout_width="0dp"-->
-    <!--            android:layout_height="match_parent"-->
-    <!--            android:layout_weight="2"/>-->
-
-    <!--        <EditText-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:text="Total Time"/>-->
 
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:layout_width="183dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Add Recipe" />
+        android:background="@drawable/button_backg"
+        android:textSize="19dp"
+        android:text="@string/Addbtn"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/holo_green_dark" />
 
 
 </LinearLayout>
