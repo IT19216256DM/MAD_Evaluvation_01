@@ -25,6 +25,16 @@ public class Page3 extends AppCompatActivity {
     User usr;
 //    public Button button;
 
+    private void clearControls(){
+        txtTitle.setText("");
+        txtAuthor.setText("");
+        txtPrice.setText("");
+        txtServings.setText("");
+        txtCook.setText("");
+        txtPreparation.setText("");
+        txtTotal.setText("");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,26 +97,26 @@ public class Page3 extends AppCompatActivity {
                     //feedback from database
                     Toast.makeText(getApplicationContext(),"Data saved successfully", Toast.LENGTH_SHORT).show();
 
-//                    String data1 = txtTitle.getText().toString();
-//                    String data2 = txtAuthor.getText().toString();
-//                    String data3 = txtPrice.getText().toString();
-//                    String data4 = txtServings.getText().toString();
-//                    String data6 = txtCook.getText().toString();
-//                    String data5 = txtPreparation.getText().toString();
-//                    String data7 = txtTotal.getText().toString();
+                    String data1 = txtTitle.getText().toString();
+                    String data2 = txtAuthor.getText().toString();
+                    String data3 = txtPrice.getText().toString();
+                    String data4 = txtServings.getText().toString();
+                    String data6 = txtCook.getText().toString();
+                    String data5 = txtPreparation.getText().toString();
+                    String data7 = txtTotal.getText().toString();
 //
-//                    Intent i = new Intent(getApplicationContext(),Page5.class);
+                    Intent i = new Intent(getApplicationContext(),Page5.class);
                     clearControls();
 //
-//                    i.putExtra("ti",data1);
-//                    i.putExtra("au",data2);
-//                    i.putExtra("pr",data3);
-//                    i.putExtra("se",data4);
-//                    i.putExtra("co",data5);
-//                    i.putExtra("pt",data6);
-//                    i.putExtra("to",data7);
-//
-//                    startActivity(i);
+                    i.putExtra("ti",data1);
+                    i.putExtra("au",data2);
+                    i.putExtra("pr",data3);
+                    i.putExtra("se",data4);
+                    i.putExtra("co",data5);
+                    i.putExtra("pt",data6);
+                    i.putExtra("to",data7);
+
+                    startActivity(i);
                 }
 
 
@@ -115,15 +125,15 @@ public class Page3 extends AppCompatActivity {
 
         });
     }
-    private void clearControls(){
-        txtTitle.setText("");
-        txtAuthor.setText("");
-        txtPrice.setText("");
-        txtServings.setText("");
-        txtCook.setText("");
-        txtPreparation.setText("");
-        txtTotal.setText("");
-    }
+//    private void clearControls(){
+//        txtTitle.setText("");
+//        txtAuthor.setText("");
+//        txtPrice.setText("");
+//        txtServings.setText("");
+//        txtCook.setText("");
+//        txtPreparation.setText("");
+//        txtTotal.setText("");
+//    }
 }
 
 
