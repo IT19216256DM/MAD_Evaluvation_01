@@ -42,4 +42,6 @@
     <string name="buttoneditfood">EDIT FOODS</string>
     <string name="buttonmyfood">MY FOODS</string>
     <string name="menufood">Food Menu</string>
+    <string name="addbtn">ADD DATA</string>
+    <string name="topicnew">Food Details</string>
 </resources>

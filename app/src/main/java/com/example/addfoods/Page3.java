@@ -47,10 +47,11 @@ public class Page3 extends AppCompatActivity {
 
         butAdd = findViewById(R.id.button3);
 
-
         usr = new User();
 
 
+
+//add data
 
         butAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,10 +67,10 @@ public class Page3 extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Empty price", Toast.LENGTH_SHORT).show();
                 else if (TextUtils.isEmpty(txtServings.getText().toString()))
                     Toast.makeText(getApplicationContext(), "Empty servings", Toast.LENGTH_SHORT).show();
-                else if (TextUtils.isEmpty(txtPreparation.getText().toString()))
-                    Toast.makeText(getApplicationContext(), "Empty preparation time", Toast.LENGTH_SHORT).show();
                 else if (TextUtils.isEmpty(txtCook.getText().toString()))
                     Toast.makeText(getApplicationContext(), "Empty cook time", Toast.LENGTH_SHORT).show();
+                else if (TextUtils.isEmpty(txtPreparation.getText().toString()))
+                    Toast.makeText(getApplicationContext(), "Empty preparation time", Toast.LENGTH_SHORT).show();
                 else if (TextUtils.isEmpty(txtTotal.getText().toString()))
                     Toast.makeText(getApplicationContext(), "Empty total time", Toast.LENGTH_SHORT).show();
                 else {
@@ -77,35 +78,32 @@ public class Page3 extends AppCompatActivity {
                     usr.setAuthor(txtAuthor.getText().toString().trim());
                     usr.setPrice(Double.parseDouble(txtPrice.getText().toString().trim()));
                     usr.setServings(Integer.parseInt(txtServings.getText().toString().trim()));
-                    usr.setPreparation(Double.parseDouble(txtPreparation.getText().toString().trim()));
                     usr.setCook(Double.parseDouble(txtCook.getText().toString().trim()));
+                    usr.setPreparation(Double.parseDouble(txtPreparation.getText().toString().trim()));
                     usr.setTotal(Double.parseDouble(txtTotal.getText().toString().trim()));
                     //insert into the database
-                    dbRef.push().setValue(usr);
-
+//                    dbRef.push().setValue(usr);
+                    dbRef.child("Usr1").setValue(usr);
                     //feedback from database
-                    Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Data saved successfully", Toast.LENGTH_SHORT).show();
 
 //                    String data1 = txtTitle.getText().toString();
-//                   String data2 = txtAuthor.getText().toString();
+//                    String data2 = txtAuthor.getText().toString();
 //                    String data3 = txtPrice.getText().toString();
 //                    String data4 = txtServings.getText().toString();
-//                    String data5 = txtPreparation.getText().toString();
 //                    String data6 = txtCook.getText().toString();
-//                   String data7 = txtTotal.getText().toString();
-
-//                   Intent i = new Intent(getApplicationContext(),Page5.class);
-//                    clearControls();
-
-//                    Intent i =new Intent(Page3.this,Page5.class);
+//                    String data5 = txtPreparation.getText().toString();
+//                    String data7 = txtTotal.getText().toString();
+//
+//                    Intent i = new Intent(getApplicationContext(),Page5.class);
                     clearControls();
-
+//
 //                    i.putExtra("ti",data1);
 //                    i.putExtra("au",data2);
 //                    i.putExtra("pr",data3);
 //                    i.putExtra("se",data4);
-//                    i.putExtra("pt",data5);
-//                    i.putExtra("co",data6);
+//                    i.putExtra("co",data5);
+//                    i.putExtra("pt",data6);
 //                    i.putExtra("to",data7);
 //
 //                    startActivity(i);
@@ -118,16 +116,14 @@ public class Page3 extends AppCompatActivity {
         });
     }
     private void clearControls(){
-       txtTitle.setText("");
+        txtTitle.setText("");
         txtAuthor.setText("");
         txtPrice.setText("");
         txtServings.setText("");
-        txtPreparation.setText("");
         txtCook.setText("");
+        txtPreparation.setText("");
         txtTotal.setText("");
-
     }
-
 }
 
 
