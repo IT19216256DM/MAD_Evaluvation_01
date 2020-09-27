@@ -46,4 +46,7 @@
     <string name="topicnew">Food Details</string>
     <string name="submitdata">SUBMIT</string>
     <string name="detailssave">SAVE DETAILS</string>
+    <string name="topic15">EDIT FOOD DETAILS</string>
+    <string name="updatefooddata">EDIT FOOD DETAILS</string>
+    <string name="but20">SAVE CHANGES</string>
 </resources>

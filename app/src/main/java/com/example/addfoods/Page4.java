@@ -36,7 +36,7 @@ public class Page4 extends AppCompatActivity {
         f =findViewById(R.id.details6);
         g =findViewById(R.id.details7);
 
-        btn = findViewById(R.id.button6);
+        btn = findViewById(R.id.buttonsave);
 
         String tit = getIntent().getStringExtra("tit");
         String aut = getIntent().getStringExtra("aut");
