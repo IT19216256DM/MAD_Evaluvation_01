@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Page4">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/Topic4"
-        android:layout_width="414dp"
-        android:layout_height="703dp"
-        android:background="@drawable/back"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:context=".Page3"
-        tools:layout_editor_absoluteX="-3dp">
+
+
 
 
         <!--    <LinearLayout-->
@@ -75,44 +68,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="384dp"
-            android:layout_height="170dp"
-            android:layout_marginStart="51dp"
-            android:layout_marginLeft="51dp"
-            android:layout_marginTop="70dp"
-            android:layout_marginEnd="41dp"
-            android:layout_marginRight="41dp"
-            android:layout_marginBottom="527dp"
-            android:contentDescription="TODO"
-            android:padding="20dp"
-            android:src="@drawable/imageicon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.369"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.217" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="76dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="180dp"
-            android:layout_marginLeft="180dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginEnd="140dp"
-            android:layout_marginRight="140dp"
-            android:layout_marginBottom="538dp"
-            android:text="Edit"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
 
 
         <Button
@@ -179,8 +134,10 @@
             android:layout_marginTop="271dp"
             android:layout_marginEnd="84dp"
             android:layout_marginRight="84dp"
+            android:layout_marginBottom="388dp"
             android:ems="10"
             android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -221,8 +178,8 @@
 
         <EditText
             android:id="@+id/details3"
-            android:layout_width="235dp"
-            android:layout_height="40dp"
+            android:layout_width="271dp"
+            android:layout_height="38dp"
             android:layout_marginStart="87dp"
             android:layout_marginLeft="87dp"
             android:layout_marginTop="5dp"
@@ -233,36 +190,40 @@
             android:inputType="textPersonName"
             app:layout_constraintBottom_toTopOf="@+id/details4"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/details2" />
+            app:layout_constraintTop_toBottomOf="@+id/details2"
+            app:layout_constraintVertical_bias="0.0" />
 
         <EditText
             android:id="@+id/details4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="112dp"
-            android:layout_marginLeft="112dp"
+            android:layout_width="318dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
             android:layout_marginTop="364dp"
-            android:layout_marginEnd="92dp"
-            android:layout_marginRight="92dp"
-            android:layout_marginBottom="294dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="304dp"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <EditText
             android:id="@+id/details6"
             android:layout_width="238dp"
             android:layout_height="38dp"
-            android:layout_marginStart="87dp"
-            android:layout_marginLeft="87dp"
-            android:layout_marginTop="440dp"
-            android:layout_marginEnd="89dp"
-            android:layout_marginRight="89dp"
-            android:layout_marginBottom="225dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginLeft="69dp"
+            android:layout_marginTop="457dp"
+            android:layout_marginEnd="107dp"
+            android:layout_marginRight="107dp"
+            android:layout_marginBottom="208dp"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -277,6 +238,6 @@
         <!--            android:text="Button" />-->
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
 
