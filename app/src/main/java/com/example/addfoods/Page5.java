@@ -93,7 +93,7 @@ public class Page5 extends AppCompatActivity {
                 String data6 = cook.getText().toString();
                 String data7 = total.getText().toString();
 
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                Intent i = new Intent(getApplicationContext(), Page4.class);
                 clearControls();
                 
                 i.putExtra("ti", data1);
