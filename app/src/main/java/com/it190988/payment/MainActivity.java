@@ -46,12 +46,12 @@ public class MainActivity extends AppCompatActivity {
 
         payDetail = new payment_details();
 
-       addPayBtn.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               openpayment2();
-           }
-       });
+//       addPayBtn.setOnClickListener(new View.OnClickListener() {
+//           @Override
+//           public void onClick(View view) {
+//               openpayment2();
+//           }
+//       });
 
 
 
@@ -117,28 +117,38 @@ public class MainActivity extends AppCompatActivity {
         addPayBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dbRef = FirebaseDatabase.getInstance().getReference().child("payment_details");
-                try {
-                    if (TextUtils.isEmpty(txtcardNum.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Empty Number", Toast.LENGTH_SHORT).show();
-                    else if (TextUtils.isEmpty(txtexpDate.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Empty expiry date", Toast.LENGTH_SHORT).show();
-                    else if (TextUtils.isEmpty(txtcvvNum.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Empty cvv", Toast.LENGTH_SHORT).show();
-                    else if (TextUtils.isEmpty(txtcardHolder.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Empty card holderName", Toast.LENGTH_SHORT).show();
-                    else {
-                        payDetail.setCardNum(Integer.parseInt(txtcardNum.getText().toString().trim()));
-                        payDetail.setDate(txtexpDate.getText().toString().trim());
-                        payDetail.setCvv(Integer.parseInt(txtcvvNum.getText().toString().trim()));
-                        payDetail.setDate(txtcardHolder.getText().toString().trim());
-                        dbRef.child("Payment1").setValue(payDetail);
-                        Toast.makeText(getApplicationContext(), "Sucessfully inserted", Toast.LENGTH_SHORT).show();
-                        clearControls();
+                addPayBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        openpayment2();
+                        dbRef = FirebaseDatabase.getInstance().getReference().child("payment_details");
+                        try {
+                            if (TextUtils.isEmpty(txtcardNum.getText().toString()))
+                                Toast.makeText(getApplicationContext(), "Empty Number", Toast.LENGTH_SHORT).show();
+                            else if (TextUtils.isEmpty(txtexpDate.getText().toString()))
+                                Toast.makeText(getApplicationContext(), "Empty expiry date", Toast.LENGTH_SHORT).show();
+                            else if (TextUtils.isEmpty(txtcvvNum.getText().toString()))
+                                Toast.makeText(getApplicationContext(), "Empty cvv", Toast.LENGTH_SHORT).show();
+                            else if (TextUtils.isEmpty(txtcardHolder.getText().toString()))
+                                Toast.makeText(getApplicationContext(), "Empty card holderName", Toast.LENGTH_SHORT).show();
+                            else {
+                                payDetail.setCardNum(Integer.parseInt(txtcardNum.getText().toString().trim()));
+                                payDetail.setDate(txtexpDate.getText().toString().trim());
+                                payDetail.setCvv(Integer.parseInt(txtcvvNum.getText().toString().trim()));
+                                payDetail.setDate(txtcardHolder.getText().toString().trim());
+                                dbRef.child("Payment1").setValue(payDetail);
+                                Toast.makeText(getApplicationContext(), "Sucessfully inserted", Toast.LENGTH_SHORT).show();
+                                clearControls();
+                            }
+                        } catch (NumberFormatException nfe) {
+                            Toast.makeText(getApplicationContext(), "Successfully inserted", Toast.LENGTH_SHORT).show();
+                        }
                     }
-                } catch (NumberFormatException nfe) {
-                    Toast.makeText(getApplicationContext(), "Successfully inserted", Toast.LENGTH_SHORT).show();
-                }
+                });
+
+
+
+
             }
         });
     }
