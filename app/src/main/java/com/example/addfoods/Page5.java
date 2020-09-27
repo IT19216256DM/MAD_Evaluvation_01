@@ -3,12 +3,15 @@ package com.example.addfoods;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 
@@ -17,7 +20,7 @@ public class Page5 extends AppCompatActivity {
 
     TextView title, author, price, servings, preparation, cook, total;
     DatabaseReference dbRef;
-    private  Button butsub;
+    private  Button butsub,butsave;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,25 @@ public class Page5 extends AppCompatActivity {
 //                startActivity(intent);
 //            }
 //        });
+
+        butsave = (Button) findViewById(R.id.buttonsave);
+        butsave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(Page5.this,MainActivity.class);
+                startActivity(intent);
+
+                Context context = getApplicationContext();
+                CharSequence message = "Back to home page";
+
+
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, message, duration);
+                toast.show();
+                toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, 0);
+            }
+        });
 
         title = findViewById(R.id.viewTitle);
         author = findViewById(R.id.viewAuthor);
