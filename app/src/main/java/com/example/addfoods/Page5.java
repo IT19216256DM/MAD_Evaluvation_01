@@ -20,7 +20,7 @@ public class Page5 extends AppCompatActivity {
 
     TextView title, author, price, servings, preparation, cook, total;
     DatabaseReference dbRef;
-    private  Button butsub,butsave;
+    private  Button buteditdata,butsave;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,8 +80,8 @@ public class Page5 extends AppCompatActivity {
         cook.setText(co);
         total.setText(to);
 
-        butsub = findViewById(R.id.buttonedit);
-        butsub.setOnClickListener(new View.OnClickListener() {
+        buteditdata = findViewById(R.id.buttonedit);
+        buteditdata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
