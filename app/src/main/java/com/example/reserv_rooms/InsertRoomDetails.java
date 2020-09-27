@@ -22,12 +22,26 @@ public class InsertRoomDetails extends AppCompatActivity {
 
     DatabaseReference databaseRoomDetails;
 
+    roomDet detRoom;
+
+    private void clearControls() {
+        type.setText("");
+        no.setText("");
+        des.setText("");
+        price.setText("");
+        sp.setText("");
+        sports.setText("");
+        ref.setText("");
+        boat.setText("");
+        sight.setText("");
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert_room_details);
 
-        databaseRoomDetails = FirebaseDatabase.getInstance().getReference("insertRooms");
 
 
         type = (EditText) findViewById(R.id.type);
@@ -41,56 +55,81 @@ public class InsertRoomDetails extends AppCompatActivity {
         sight = (EditText) findViewById(R.id.sight);
         addRoomBtn = (Button) findViewById(R.id.addRoomBtn);
 
+        detRoom = new roomDet();
+
         addRoomBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                addRoom();
+                databaseRoomDetails = FirebaseDatabase.getInstance().getReference().child("Rooms");
+
+                try {
+
+                    if (TextUtils.isEmpty(type.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Enter the room type", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(no.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Enter the No of rooms", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(des.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Enter a description", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(price.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Enter price", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(sp.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Enter the swimming pool details", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(sports.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Enter the sports details", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(ref.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Enter the swimming refrigerator details", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(boat.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Enter the boat ride details", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(sight.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Enter the sightseeing details", Toast.LENGTH_SHORT).show();
+                    else {
+                        detRoom.setType(type.getText().toString().trim());
+                        detRoom.setNo(no.getText().toString().trim());
+                        detRoom.setDes(des.getText().toString().trim());
+                        detRoom.setPrice(price.getText().toString().trim());
+                        detRoom.setSp(sp.getText().toString().trim());
+                        detRoom.setSports(sports.getText().toString().trim());
+                        detRoom.setRef(ref.getText().toString().trim());
+                        detRoom.setBoat(boat.getText().toString().trim());
+                        detRoom.setSight(sight.getText().toString().trim());
+
+                        //databaseRoomDetails.push().setValue(detRoom);
+                        databaseRoomDetails.child("room1").setValue(detRoom);
+                        Toast.makeText(getApplicationContext(), "Datasaved", Toast.LENGTH_SHORT).show();
+
+
+                        String data1 = type.getText().toString();
+                        String data2 = no.getText().toString();
+                        String data3 = des.getText().toString();
+                        String data4 = price.getText().toString();
+                        String data5 = sp.getText().toString();
+                        String data6 = sports.getText().toString();
+                        String data7 = ref.getText().toString();
+                        String data8 = boat.getText().toString();
+                        String data9 = sight.getText().toString();
+
+                        Intent intent = new Intent(getApplicationContext(), existingRooms.class);
+                        clearControls();
+
+                        intent.putExtra("type", data1);
+                        intent.putExtra("no", data2);
+                        intent.putExtra("des", data3);
+                        intent.putExtra("price", data4);
+                        intent.putExtra("sp", data5);
+                        intent.putExtra("sports", data6);
+                        intent.putExtra("ref", data7);
+                        intent.putExtra("boat", data8);
+                        intent.putExtra("sight", data9);
+
+                        startActivity(intent);
+                    }
+                } catch (NumberFormatException e) {
+
+                    Toast.makeText(getApplicationContext(), "invalid", Toast.LENGTH_SHORT).show();
+                }
             }
+
         });
-
+        };
     }
-    private void addRoom(){
-        String roomType = type.getText().toString().trim();
-        String roomNo = no.getText().toString().trim();
-        String roomDes = des.getText().toString().trim();
-        String roomPrice = price.getText().toString().trim();
-        String roomSp = sp.getText().toString().trim();
-        String roomSports = sports.getText().toString().trim();
-        String roomRef = ref.getText().toString().trim();
-        String roomBoat = boat.getText().toString().trim();
-        String roomSight = sight.getText().toString().trim();
-
-        if(!TextUtils.isEmpty(roomType) && !TextUtils.isEmpty(roomNo) && !TextUtils.isEmpty(roomDes) && !TextUtils.isEmpty(roomPrice) && !TextUtils.isEmpty(roomSp) && !TextUtils.isEmpty(roomSports) && !TextUtils.isEmpty(roomRef) && !TextUtils.isEmpty(roomBoat) && !TextUtils.isEmpty(roomSight)){
-
-            String id = databaseRoomDetails.push().getKey();
-
-            roomDet roomDetObj = new roomDet(id,  roomType, roomNo, roomDes, roomPrice, roomSp, roomSports, roomRef, roomBoat, roomSight);
-            databaseRoomDetails.child("ins_room").setValue(roomDetObj);
-
-            Toast.makeText(this,"Room Added Successfully", Toast.LENGTH_LONG).show();
-        }
-
-        else{
-            Toast.makeText(this, "Please fill out the form", Toast.LENGTH_LONG).show();
-        }
-
-
-        String data1 = type.getText().toString();
-        String data2 = no.getText().toString();
-        String data3 = des.getText().toString();
-        String data4 = price.getText().toString();
-        String data5 = sp.getText().toString();
-        String data6 = sports.getText().toString();
-        String data7 = ref.getText().toString();
-        String data8 = boat.getText().toString();
-        String data9 = sight.getText().toString();
-
-        Intent intent = new Intent(getApplicationContext(), existingRooms.class);
-
-        intent.putExtra("type", data1);
-        intent.putExtra("no", data2);
-
-
-}
-}
