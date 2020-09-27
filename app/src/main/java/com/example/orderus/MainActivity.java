@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button button3;
+    private Button button17;
 
 
     @Override
@@ -32,10 +33,22 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+        button17 = findViewById(R.id.button17);
+        button17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMainActivity8();
+            }
+        });
     }
 
     public void openMainMenu() {
         Intent intent = new Intent(this, MainMenu.class);
+        startActivity(intent);
+    }
+    public void openMainActivity8(){
+        Intent intent = new Intent(this, MainActivity8.class);
         startActivity(intent);
     }
 }

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "245350477694",
+    "firebase_url": "https://orderusproject.firebaseio.com",
+    "project_id": "orderusproject",
+    "storage_bucket": "orderusproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245350477694:android:d8be085abc23e244a88d2f",
+        "android_client_info": {
+          "package_name": "com.example.orderus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245350477694-5mqec2r5nn5tks60otde2aets04rtgt1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXnaihlpRKe26jixgtXxAuJePxZs5hJuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245350477694-5mqec2r5nn5tks60otde2aets04rtgt1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
