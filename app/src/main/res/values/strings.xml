@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Payment</string>
+    <string name="pay_method">Payment Method</string>
+    <string name="card_Number">CARD NUMBER</string>
+    <string name="card_box"></string>
+    <string name="expiryDate">Expiry Date</string>
+    <string name="expiryDateBox"></string>
+    <string name="cvv">CVV</string>
+    <string name="cvvBox"></string>
+    <string name="CardHolder">CARD HOLDER NAME</string>
+    <string name="cardHolderBoxName"></string>
+    <string name="PAY">PAY</string>
+    <string name="Verification">Payment</string>
+    <string name="OTP_Guide">The one time 6 digit password has been sent to your mobile number71*******77. Please enter the code below to pay.</string>
+    <string name="Enter_otp">ENTER CODE </string>
+
+    <string name="ViewPay">View</string>
+    <string name="Payment_Acknowledge">Payment Acknowledgement</string>
+    <string name="Payment">Payment Success</string>
+    <string name="Paid_Amount"> Paid Amount:</string>
+    <string name="Amount_Space"></string>
+    <string name="Acknowledge_message">Your Payment has been processed successfully</string>
+    <string name="Resturant_Name">Indian Summer Resturant</string>
+    <string name="Resturant_Location">Colombo</string>
+    <string name="Resturant_Contact">771236758</string>
+    <string name="Resturant_Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat</string>
+    <string name="Item1">Iteam 1</string>
+    <string name="Item2"> Item 2</string>
+    <string name="Item3"> Item 3</string>
+
+    <string name="Amt_for_item1">xxx</string>
+    <string name="Amt_for_item2">xxx</string>
+    <string name="Amt_for_item3">xxx</string>
+
+    <string name="Total_amt">Total Amount</string>
+    <string name="Discount">Discount</string>
+    <string name="GrandTotal1">Grand Total</string>
+
+    <string name="Continue_shopping">Continue Shooping</string>
+    <string name="Pay_for_cart">Check Out</string>
+
+    <string name="add_cart">+</string>
+    <string name="edit_cart">-</string>
+    <string name="NoOfItems">1</string>
+
+    <string name="NumOfOrder">6</string>
+
+
+    <string name="TotNumOrder">4</string>
+    <string name="DeletePay">Delete</string>
+    <string name="btnUpdate">Update</string>
+
+
+</resources>
