@@ -68,7 +68,7 @@ public class Page4 extends AppCompatActivity {
                 String coo = f.getText().toString();
                 String tot = g.getText().toString();
 
-                dbRef = FirebaseDatabase.getInstance().getReference().child("User");
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Usr9");
 
                 HashMap hashMap = new HashMap();
 
