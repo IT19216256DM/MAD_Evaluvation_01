@@ -4,12 +4,30 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button3;
-    private Button button17;
+
+
+    EditText txtUser, txtPass;
+    Button btnlog;
+    DatabaseReference dbRef;
+    Login log;
+
+    private void clearControls() {
+        txtUser.setText("");
+        txtPass.setText("");
+
+
+    }
+
 
 
     @Override
@@ -17,39 +35,45 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button3 = findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
+
+
+        txtUser = findViewById(R.id.uname);
+        txtPass = findViewById(R.id.pass);
+
+        btnlog = findViewById(R.id.button17);
+
+        log = new Login();
+
+        btnlog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openMainMenu();
-            }
-        });
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Login");
 
-        button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openMainMenu();
-            }
+                try {
+                    if (TextUtils.isEmpty(txtUser.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Please enter an User name", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(txtPass.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Please enter a Password", Toast.LENGTH_SHORT).show();
+                    else {
+                        log.setTxtUser(txtUser.getText().toString().trim());
+                        log.setTxtPass(txtPass.getText().toString().trim());
 
-        });
+                        dbRef.child("Emp1").setValue(log);
 
-        button17 = findViewById(R.id.button17);
-        button17.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openMainActivity8();
+                        Toast.makeText(getApplicationContext(), "data saved successfully", Toast.LENGTH_SHORT).show();
+
+                        Intent i = new Intent(getApplicationContext(),MainActivity6.class);
+                        startActivity(i);
+                        clearControls();
+
+                    }
+                } catch (NumberFormatException e) {
+                    Toast.makeText(getApplicationContext(), "Invalid Contact Number", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
 
-    public void openMainMenu() {
-        Intent intent = new Intent(this, MainMenu.class);
-        startActivity(intent);
-    }
-    public void openMainActivity8(){
-        Intent intent = new Intent(this, MainActivity8.class);
-        startActivity(intent);
-    }
+
 }
 
