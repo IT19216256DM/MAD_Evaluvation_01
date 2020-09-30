@@ -17,7 +17,7 @@ import java.util.HashMap;
 
 
 public class Page4 extends AppCompatActivity {
-    private Button buttonv;
+
 
     EditText a,b,c,d,e,f,g;
     DatabaseReference dbRef;
@@ -26,6 +26,7 @@ public class Page4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page4);
+
 
         a =findViewById(R.id.details1);
         b =findViewById(R.id.details2);
