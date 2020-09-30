@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MainActivity.this, Page4.class);
+                Intent intent =new Intent(MainActivity.this, SearchfoodPage1.class);
                 startActivity(intent);
 
                 Context context = getApplicationContext();

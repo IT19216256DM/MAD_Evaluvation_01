@@ -28,6 +28,32 @@ public class Page4 extends AppCompatActivity {
         setContentView(R.layout.activity_page4);
 
 
+        //delete
+//        btn = findViewById(R.id.btndeletedetails);
+//        btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                final DatabaseReference[] dbRef = {FirebaseDatabase.getInstance().getReference().child("Usr9")};
+//                dbRef[0].addListenerForSingleValueEvent(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                        if(snapshot.hasChild("Usr9")){
+//                            dbRef[0] =FirebaseDatabase.getInstance().getReference().child("Usr9").child("Usr9");
+//                            dbRef[0].removeValue();
+//                            Toast.makeText(getApplicationContext(),"Data Deleted Successfully",Toast.LENGTH_LONG).show();
+//
+//                        }
+//                        else
+//                            Toast.makeText(getApplicationContext(),"No Source To Delete", Toast.LENGTH_LONG).show();
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError error) {
+//
+//                    }
+//                });
+
+
         a =findViewById(R.id.details1);
         b =findViewById(R.id.details2);
         c =findViewById(R.id.details3);
