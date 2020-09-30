@@ -57,7 +57,7 @@ public class MainActivity6 extends AppCompatActivity {
 
                         Toast.makeText(getApplicationContext(), "data saved successfully", Toast.LENGTH_SHORT).show();
 
-                        Intent i = new Intent(getApplicationContext(),MainActivity2.class);
+                        Intent i = new Intent(getApplicationContext(),MainMenu.class);
                         startActivity(i);
                         clearControls();
 
