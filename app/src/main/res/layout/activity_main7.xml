@@ -33,6 +33,8 @@
             android:background="@drawable/custom_button"
             android:text="Cancle"
             android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -116,6 +118,9 @@
             android:background="@drawable/custom_button"
             android:text="Update"
             android:textColor="#FFFFFF"
+
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
