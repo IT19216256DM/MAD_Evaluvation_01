@@ -79,7 +79,7 @@ public class Page4 extends AppCompatActivity {
                 hashMap.put("f",coo);
                 hashMap.put("g",tot);
 
-                dbRef.child("User").updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
+                dbRef.child("Usr1").updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
                     @Override
                     public void onSuccess(Object o) {
                         Toast.makeText(getApplicationContext(),"Data updated successfully", Toast.LENGTH_SHORT).show();
