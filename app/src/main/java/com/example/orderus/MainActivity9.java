@@ -13,7 +13,8 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class MainActivity6 extends AppCompatActivity {
+public class MainActivity9 extends AppCompatActivity {
+
 
     EditText txtUser, txtPass;
     Button btnlog;
@@ -30,7 +31,9 @@ public class MainActivity6 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main6);
+        setContentView(R.layout.activity_main9);
+
+
 
         txtUser = findViewById(R.id.uname);
         txtPass = findViewById(R.id.pass);
@@ -57,7 +60,7 @@ public class MainActivity6 extends AppCompatActivity {
 
                         Toast.makeText(getApplicationContext(), "data saved successfully", Toast.LENGTH_SHORT).show();
 
-                        Intent i = new Intent(getApplicationContext(),MainActivity2.class);
+                        Intent i = new Intent(getApplicationContext(),MainActivity8.class);
                         startActivity(i);
                         clearControls();
 
@@ -68,5 +71,4 @@ public class MainActivity6 extends AppCompatActivity {
             }
         });
     }
-
 }

@@ -15,19 +15,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    EditText txtUser, txtPass;
-    Button btnlog;
-    DatabaseReference dbRef;
-    Login log;
-
-    private void clearControls() {
-        txtUser.setText("");
-        txtPass.setText("");
-
-
-    }
-
+    private Button button3;
+    private Button button17;
 
 
     @Override
@@ -36,44 +25,41 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
-        txtUser = findViewById(R.id.uname);
-        txtPass = findViewById(R.id.pass);
-
-        btnlog = findViewById(R.id.button17);
-
-        log = new Login();
-
-        btnlog.setOnClickListener(new View.OnClickListener() {
+        button3 = findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dbRef = FirebaseDatabase.getInstance().getReference().child("Login");
+                openMainActivity6();
+            }
+        });
 
-                try {
-                    if (TextUtils.isEmpty(txtUser.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Please enter an User name", Toast.LENGTH_SHORT).show();
-                    else if (TextUtils.isEmpty(txtPass.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Please enter a Password", Toast.LENGTH_SHORT).show();
-                    else {
-                        log.setTxtUser(txtUser.getText().toString().trim());
-                        log.setTxtPass(txtPass.getText().toString().trim());
+        button3 = (Button) findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMainActivity6();
+            }
 
-                        dbRef.child("Emp1").setValue(log);
+        });
 
-                        Toast.makeText(getApplicationContext(), "data saved successfully", Toast.LENGTH_SHORT).show();
-
-                        Intent i = new Intent(getApplicationContext(),MainActivity6.class);
-                        startActivity(i);
-                        clearControls();
-
-                    }
-                } catch (NumberFormatException e) {
-                    Toast.makeText(getApplicationContext(), "Invalid Contact Number", Toast.LENGTH_SHORT).show();
-                }
+        button17 = findViewById(R.id.button17);
+        button17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMainActivity9();
             }
         });
     }
 
+    public void openMainActivity6() {
+        Intent intent = new Intent(this, MainActivity6.class);
+        startActivity(intent);
+    }
+
+    public void openMainActivity9(){
+        Intent intent = new Intent(this, MainActivity9.class);
+        startActivity(intent);
+    }
 
 }
 
