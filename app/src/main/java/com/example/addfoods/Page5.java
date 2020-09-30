@@ -9,7 +9,6 @@ import android.view.Gravity;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +35,7 @@ public class Page5 extends AppCompatActivity {
 //            }
 //        });
 
-        butsave = (Button) findViewById(R.id.buttonsave);
+        butsave = (Button) findViewById(R.id.btndeletedata);
         butsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -80,7 +79,7 @@ public class Page5 extends AppCompatActivity {
         cook.setText(co);
         total.setText(to);
 
-        buteditdata = findViewById(R.id.buttonedit);
+        buteditdata = findViewById(R.id.btneditdata);
         buteditdata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

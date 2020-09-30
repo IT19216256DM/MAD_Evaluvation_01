@@ -78,23 +78,23 @@
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/buttonedit"
+        android:id="@+id/btneditdata"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:background="@drawable/button_backg"
-        android:text="@string/Editbtn"
+        android:text="@string/btneditdata"
         android:textColor="@android:color/black"
         android:textColorHighlight="@android:color/holo_green_dark"
         android:textSize="18sp" />
 
     <Button
-        android:id="@+id/buttonsave"
+        android:id="@+id/btndeletedata"
         android:layout_width="150dp"
         android:layout_height="65dp"
         android:layout_gravity="center"
         android:background="@drawable/button_backg"
-        android:text="@string/detailssave"
+        android:text="@string/btnsavedata"
         android:textColor="@android:color/black"
         android:textColorHighlight="@android:color/holo_green_dark"
         android:textSize="18sp" />

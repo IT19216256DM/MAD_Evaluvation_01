@@ -49,4 +49,9 @@
     <string name="topic15">EDIT FOOD DETAILS</string>
     <string name="updatefooddata">EDIT FOOD DETAILS</string>
     <string name="but20">SAVE CHANGES</string>
+    <string name="btnupdate">UPDATE DETAILS</string>
+    <string name="btneditdata">EDIT DATA</string>
+    <string name="btnsavedata">SAVE DATA</string>
+    <string name="btnupdatedata">UPDATE DATA</string>
+    <string name="btndeletedata">DELETE DATA</string>
 </resources>

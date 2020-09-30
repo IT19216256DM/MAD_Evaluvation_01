@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
-import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -36,7 +35,7 @@ public class Page4 extends AppCompatActivity {
         f =findViewById(R.id.details6);
         g =findViewById(R.id.details7);
 
-        btn = findViewById(R.id.buttonsave);
+        btn = findViewById(R.id.btnupdatedata);
 
         String tit = getIntent().getStringExtra("tit");
         String aut = getIntent().getStringExtra("aut");
