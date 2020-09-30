@@ -13,7 +13,7 @@
         android:layout_height="136dp"
 
         android:background="@drawable/custom_button"
-        android:text="My Resturants"
+        android:text="My"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +26,7 @@
         android:id="@+id/textView"
         android:layout_width="214dp"
         android:layout_height="101dp"
-        android:text="Main Menu"
+        android:text="Main "
         android:textColor="@android:color/holo_green_dark"
         android:textSize="36sp"
         android:textStyle="bold"
