@@ -67,7 +67,7 @@ public class Page3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                dbRef = FirebaseDatabase.getInstance().getReference().child("Usr1");
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Usr9");
 
                 if (TextUtils.isEmpty(txtTitle.getText().toString()))
                     Toast.makeText(getApplicationContext(), "Empty title", Toast.LENGTH_SHORT).show();
@@ -93,7 +93,7 @@ public class Page3 extends AppCompatActivity {
                     usr.setTotal(Double.parseDouble(txtTotal.getText().toString().trim()));
                     //insert into the database
 //                    dbRef.push().setValue(usr);
-                    dbRef.child("Usr1").setValue(usr);
+                    dbRef.child("Usr9").setValue(usr);
                     //feedback from database
                     Toast.makeText(getApplicationContext(),"Data saved successfully", Toast.LENGTH_SHORT).show();
 
