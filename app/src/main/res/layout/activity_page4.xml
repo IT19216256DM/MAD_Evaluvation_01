@@ -89,7 +89,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/btndeletedata"
+            android:id="@+id/btnsavedata"
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:layout_gravity="center"

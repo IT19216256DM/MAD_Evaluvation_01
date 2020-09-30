@@ -35,7 +35,7 @@ public class Page5 extends AppCompatActivity {
 //            }
 //        });
 
-        butsave = (Button) findViewById(R.id.btndeletedata);
+        butsave = (Button) findViewById(R.id.buttonsavedetails);
         butsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
