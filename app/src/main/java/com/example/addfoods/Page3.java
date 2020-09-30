@@ -67,7 +67,7 @@ public class Page3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                dbRef = FirebaseDatabase.getInstance().getReference().child("User");
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Usr1");
 
                 if (TextUtils.isEmpty(txtTitle.getText().toString()))
                     Toast.makeText(getApplicationContext(), "Empty title", Toast.LENGTH_SHORT).show();
