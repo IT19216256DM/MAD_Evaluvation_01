@@ -36,7 +36,7 @@ public class Page4 extends AppCompatActivity {
         f =findViewById(R.id.details6);
         g =findViewById(R.id.details7);
 
-        btn = findViewById(R.id.btnupdatedata);
+//        btn = findViewById(R.id.btnupdatedata);
 
         String tit = getIntent().getStringExtra("tit");
         String aut = getIntent().getStringExtra("aut");
@@ -54,7 +54,7 @@ public class Page4 extends AppCompatActivity {
         f.setText(coo);
         g.setText(tot);
 
-
+        btn = findViewById(R.id.btnupdatedata);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
