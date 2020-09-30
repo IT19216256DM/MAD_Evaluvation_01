@@ -55,4 +55,5 @@
     <string name="btnupdatedata">UPDATE DATA</string>
     <string name="btndeletedata">DELETE DATA</string>
     <string name="btnsavedetails">SAVE DATA</string>
+    <string name="btndeletedetails">DELETE DATA</string>
 </resources>
