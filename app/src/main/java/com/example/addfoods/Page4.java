@@ -159,7 +159,7 @@ public class Page4 extends AppCompatActivity {
 
 //                Intent intent =new Intent(Page4.this,MainActivity.class);
 //                startActivity(intent);
-                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+//                Intent i = new Intent(getApplicationContext(),MainActivity.class);
 //                clearControls();
 ////
 //                i.putExtra("ti",ti);
