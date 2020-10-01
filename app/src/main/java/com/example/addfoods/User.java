@@ -4,7 +4,7 @@ public class User {
     private String title;
     private String author;
     private Double price;
-    private Integer iteamno;
+    private String ID;
     private Double preparation;
     private Double cook;
     private Double total;
@@ -13,12 +13,12 @@ public class User {
 
     }
 
-    public Integer getIteamno() {
-        return iteamno;
+    public String getID() {
+        return ID;
     }
 
-    public void setIteamno(Integer iteamno) {
-        this.iteamno = iteamno;
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
     public String getTitle() {
