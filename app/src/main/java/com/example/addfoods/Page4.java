@@ -71,13 +71,13 @@ public class Page4 extends AppCompatActivity {
         cook =findViewById(R.id.details6);
         total =findViewById(R.id.details7);
 
-        String tit = getIntent().getStringExtra("tit");
-        String aut = getIntent().getStringExtra("aut");
-        String pri = getIntent().getStringExtra("pri");
-        String sec = getIntent().getStringExtra("sec");
-        String pti = getIntent().getStringExtra("pti");
-        String coo = getIntent().getStringExtra("coo");
-        String tot = getIntent().getStringExtra("tot");
+        String ti = getIntent().getStringExtra("ti");
+        String au = getIntent().getStringExtra("au");
+        String pr = getIntent().getStringExtra("pr");
+        String se = getIntent().getStringExtra("se");
+        String pt = getIntent().getStringExtra("pt");
+        String co = getIntent().getStringExtra("co");
+        String to = getIntent().getStringExtra("to");
 
 //        a.setText(tit);
 //        b.setText(aut);
@@ -87,13 +87,13 @@ public class Page4 extends AppCompatActivity {
 //        f.setText(coo);
 //        g.setText(tot);
 
-        title.setText(tit);
-        author.setText(aut);
-        price.setText(pri);
-        servings.setText(sec);
-        preparation.setText(pti);
-        cook.setText(coo);
-        total.setText(tot);
+        title.setText(ti);
+        author.setText(au);
+        price.setText(pr);
+        servings.setText(se);
+        preparation.setText(pt);
+        cook.setText(co);
+        total.setText(to);
 
         btn = findViewById(R.id.btnupdatedata);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -109,13 +109,13 @@ public class Page4 extends AppCompatActivity {
 //                String coo = f.getText().toString();
 //                String tot = g.getText().toString();
 
-                String tit = title.getText().toString();
-                String aut = author.getText().toString();
-                String pri = price.getText().toString();
-                String sec = servings.getText().toString();
-                String pti = preparation.getText().toString();
-                String coo = cook.getText().toString();
-                String tot = total.getText().toString();
+                String ti = title.getText().toString();
+                String au = author.getText().toString();
+                String pr = price.getText().toString();
+                String se = servings.getText().toString();
+                String pt = preparation.getText().toString();
+                String co = cook.getText().toString();
+                String to = total.getText().toString();
 
                 dbRef = FirebaseDatabase.getInstance().getReference().child("Usr9");
 
@@ -129,13 +129,13 @@ public class Page4 extends AppCompatActivity {
 ////                hashMap.put("f",coo);
 ////                hashMap.put("g",tot);
 
-                hashMap.put("title",tit);
-                hashMap.put("author",aut);
-                hashMap.put("price",pri);
-                hashMap.put("servings",sec);
-                hashMap.put("preparation",pti);
-                hashMap.put("cook",coo);
-                hashMap.put("total",tot);
+                hashMap.put("title",ti);
+                hashMap.put("author",au);
+                hashMap.put("price",pr);
+                hashMap.put("servings",se);
+                hashMap.put("preparation",pt);
+                hashMap.put("cook",co);
+                hashMap.put("total",to);
 
                 dbRef.child("Usr9").updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
                     @Override
