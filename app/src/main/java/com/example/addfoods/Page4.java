@@ -121,13 +121,13 @@ public class Page4 extends AppCompatActivity {
 //                String co = f.getText().toString();
 //                String to = g.getText().toString();
 
-                String ti = title.getText().toString();
-                String au = author.getText().toString();
-                String pr = price.getText().toString();
-                String se = servings.getText().toString();
-                String pt = preparation.getText().toString();
-                String co = cook.getText().toString();
-                String to = total.getText().toString();
+                String tit = title.getText().toString();
+                String aut = author.getText().toString();
+                String pri = price.getText().toString();
+                String sec = servings.getText().toString();
+                String pti = preparation.getText().toString();
+                String coo = cook.getText().toString();
+                String tot = total.getText().toString();
 
                 dbRef = FirebaseDatabase.getInstance().getReference().child("Usr10");
 
@@ -141,13 +141,13 @@ public class Page4 extends AppCompatActivity {
 //                hashMap.put("f",co);
 //                hashMap.put("g",to);
 
-                hashMap.put("title",ti);
-                hashMap.put("author",au);
-                hashMap.put("price",pr);
-                hashMap.put("servings",se);
-                hashMap.put("preparation",pt);
-                hashMap.put("cook",co);
-                hashMap.put("total",to);
+                hashMap.put("title",tit);
+                hashMap.put("author",aut);
+                hashMap.put("price",pri);
+                hashMap.put("servings",sec);
+                hashMap.put("preparation",pti);
+                hashMap.put("cook",coo);
+                hashMap.put("total",tot);
 
                 dbRef.child("Usr10").updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
                     @Override
