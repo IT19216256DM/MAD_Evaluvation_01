@@ -19,6 +19,7 @@ public class Page3 extends AppCompatActivity {
     Button butAdd;
     DatabaseReference dbRef;
     User usr;
+    private String ID;
 //    public Button button;
 
     private void clearControls(){
@@ -83,13 +84,14 @@ public class Page3 extends AppCompatActivity {
                     usr.setTitle(txtTitle.getText().toString().trim());
                     usr.setAuthor(txtAuthor.getText().toString().trim());
                     usr.setPrice(Double.parseDouble(txtPrice.getText().toString().trim()));
-                    usr.setIteamno(Integer.parseInt(txtIteamno.getText().toString().trim()));
+                    usr.setID(txtIteamno.getText().toString().trim());
                     usr.setCook(Double.parseDouble(txtCook.getText().toString().trim()));
                     usr.setPreparation(Double.parseDouble(txtPreparation.getText().toString().trim()));
                     usr.setTotal(Double.parseDouble(txtTotal.getText().toString().trim()));
                     //insert into the database
 //                    dbRef.push().setValue(usr);
-                    dbRef.child("Usr12").setValue(usr);
+                    ID = usr.getID();
+                    dbRef.child(ID).setValue(usr);
                     //feedback from database
                     Toast.makeText(getApplicationContext(),"Data saved successfully", Toast.LENGTH_SHORT).show();
 
