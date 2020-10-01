@@ -132,7 +132,7 @@ public class MainActivity4 extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if(snapshot.hasChild("Emp1")){
-                            dbRef[0] =FirebaseDatabase.getInstance().getReference().child("Employee").child("Emp1");
+                            dbRef[0] =FirebaseDatabase.getInstance().getReference().child("Emp1").child("Emp1");
                             dbRef[0].removeValue();
                             Toast.makeText(getApplicationContext(),"Data Deleted Successfully",Toast.LENGTH_LONG).show();
 
