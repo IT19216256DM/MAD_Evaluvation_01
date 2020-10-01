@@ -113,13 +113,13 @@ public class Page4 extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                String ti = a.getText().toString();
-                String au = b.getText().toString();
-                String pr = c.getText().toString();
-                String se = d.getText().toString();
-                String pt = e.getText().toString();
-                String co = f.getText().toString();
-                String to = g.getText().toString();
+                String tit = a.getText().toString();
+                String aut = b.getText().toString();
+                String pri = c.getText().toString();
+                String sec = d.getText().toString();
+                String pti = e.getText().toString();
+                String coo = f.getText().toString();
+                String tot = g.getText().toString();
 
 //                String ti = title.getText().toString();
 //                String au = author.getText().toString();
@@ -133,13 +133,13 @@ public class Page4 extends AppCompatActivity {
 
                 HashMap hashMap = new HashMap();
 
-                hashMap.put("a",ti);
-                hashMap.put("b",au);
-                hashMap.put("c",pr);
-                hashMap.put("d",se);
-                hashMap.put("e",pt);
-                hashMap.put("f",co);
-                hashMap.put("g",to);
+                hashMap.put("a",tit);
+                hashMap.put("b",aut);
+                hashMap.put("c",pri);
+                hashMap.put("d",sec);
+                hashMap.put("e",pti);
+                hashMap.put("f",coo);
+                hashMap.put("g",tot);
 
 //                hashMap.put("title",ti);
 //                hashMap.put("author",au);
