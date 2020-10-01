@@ -25,15 +25,15 @@ public class Page4 extends AppCompatActivity {
     DatabaseReference dbRef;
     Button btn;
 
-    private void clearControls(){
-        title.setText("");
-        author.setText("");
-        price.setText("");
-        servings.setText("");
-        cook.setText("");
-        preparation.setText("");
-        total.setText("");
-    }
+//    private void clearControls(){
+//        title.setText("");
+//        author.setText("");
+//        price.setText("");
+//        servings.setText("");
+//        cook.setText("");
+//        preparation.setText("");
+//        total.setText("");
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -160,17 +160,17 @@ public class Page4 extends AppCompatActivity {
 //                Intent intent =new Intent(Page4.this,MainActivity.class);
 //                startActivity(intent);
                 Intent i = new Intent(getApplicationContext(),MainActivity.class);
-                clearControls();
+//                clearControls();
+////
+//                i.putExtra("ti",ti);
+//                i.putExtra("au",au);
+//                i.putExtra("pr",pr);
+//                i.putExtra("se",se);
+//                i.putExtra("co",co);
+//                i.putExtra("pt",pt);
+//                i.putExtra("to",to);
 //
-                i.putExtra("ti",ti);
-                i.putExtra("au",au);
-                i.putExtra("pr",pr);
-                i.putExtra("se",se);
-                i.putExtra("co",co);
-                i.putExtra("pt",pt);
-                i.putExtra("to",to);
-
-                startActivity(i);
+//                startActivity(i);
 
             }
         });
