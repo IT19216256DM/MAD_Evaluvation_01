@@ -52,12 +52,29 @@ public class Page4 extends AppCompatActivity {
                 usr.setID(id.getText().toString().trim());
                 ID = usr.getID();
 
+                dbRef.child("User").child(ID).child("author").setValue(id.getText().toString().trim());
+                dbRef.child("User").child(ID).child("cook").setValue(Double.parseDouble(id.getText().toString().trim()));
+                dbRef.child("User").child(ID).child("id").setValue(id.getText().toString().trim());
+                dbRef.child("User").child(ID).child("preparation").setValue(id.getText().toString().trim());
+                dbRef.child("User").child(ID).child("price").setValue(Double.parseDouble(id.getText().toString().trim()));
+                dbRef.child("User").child(ID).child("title").setValue(Double.parseDouble(id.getText().toString().trim()));
+                dbRef.child("User").child(ID).child("total").setValue(Double.parseDouble(id.getText().toString().trim()));
+
+                Toast.makeText(getApplicationContext(),"Updated Successfully", Toast.LENGTH_SHORT).show();
 
 
             }
         });
 
-
-
     }
+    private void clear(){
+        id.setText("");
+        cook.setText("");
+        author.setText("");
+        preparation.setText("");
+        price.setText("");
+        title.setText("");
+        total.setText("");
+    }
+
 }
