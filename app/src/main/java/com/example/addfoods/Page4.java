@@ -83,13 +83,13 @@ public class Page4 extends AppCompatActivity {
         cook =findViewById(R.id.details6);
         total =findViewById(R.id.details7);
 
-        String tit = getIntent().getStringExtra("tit");
-        String aut = getIntent().getStringExtra("aut");
-        String pri = getIntent().getStringExtra("pri");
-        String sec = getIntent().getStringExtra("sec");
-        String pti = getIntent().getStringExtra("pti");
-        String coo = getIntent().getStringExtra("coo");
-        String tot = getIntent().getStringExtra("tot");
+        String ti = getIntent().getStringExtra("ti");
+        String au = getIntent().getStringExtra("au");
+        String pr = getIntent().getStringExtra("pr");
+        String se = getIntent().getStringExtra("se");
+        String pt = getIntent().getStringExtra("pt");
+        String co = getIntent().getStringExtra("co");
+        String to = getIntent().getStringExtra("to");
 
 //        a.setText(ti);
 //        b.setText(au);
@@ -99,13 +99,13 @@ public class Page4 extends AppCompatActivity {
 //        f.setText(co);
 //        g.setText(to);
 
-        title.setText(tit);
-        author.setText(aut);
-        price.setText(pri);
-        servings.setText(sec);
-        preparation.setText(pti);
-        cook.setText(coo);
-        total.setText(tot);
+        title.setText(ti);
+        author.setText(au);
+        price.setText(pr);
+        servings.setText(se);
+        preparation.setText(pt);
+        cook.setText(co);
+        total.setText(to);
 
         btn = findViewById(R.id.btnupdatedata);
         btn.setOnClickListener(new View.OnClickListener() {
