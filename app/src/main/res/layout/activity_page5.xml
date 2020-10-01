@@ -29,14 +29,14 @@
         android:src="@drawable/imageicon" />
 
     <EditText
-        android:id="@+id/viewTitle"
+        android:id="@+id/viewId"
         android:layout_width="match_parent"
         android:layout_height="53dp"
         android:ems="10"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/viewAuthor"
+        android:id="@+id/viewtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -50,7 +50,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/viewServings"
+        android:id="@+id/viewauthor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

@@ -72,4 +72,7 @@
     <string name="btnsoldout">SOLD OUT</string>
     <string name="btnorder1">ORDER NOW</string>
     <string name="btnorder2">ORDER NOW</string>
+    <string name="Etiteamno">Enter Food ID</string>
+    <string name="EtTitle">Enter Food Title</string>
+    <string name="EtAuthor">Enter Food Author</string>
 </resources>

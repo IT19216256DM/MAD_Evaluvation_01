@@ -1,6 +1,5 @@
 package com.example.addfoods;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -11,25 +10,22 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class Page3 extends AppCompatActivity {
 
-    EditText txtTitle, txtAuthor, txtPrice, txtServings, txtPreparation, txtCook, txtTotal;
+    EditText txtIteamno,txtTitle, txtAuthor, txtPrice, txtPreparation, txtCook, txtTotal;
     Button butAdd;
     DatabaseReference dbRef;
     User usr;
 //    public Button button;
 
     private void clearControls(){
+        txtIteamno.setText("");
         txtTitle.setText("");
         txtAuthor.setText("");
         txtPrice.setText("");
-        txtServings.setText("");
         txtCook.setText("");
         txtPreparation.setText("");
         txtTotal.setText("");
@@ -47,10 +43,10 @@ public class Page3 extends AppCompatActivity {
 //                Intent intent =new Intent(Page3.this,Page5.class);
 //                startActivity(intent);
 
-        txtTitle = findViewById(R.id.Ettitle);
-        txtAuthor = findViewById(R.id.Etauthor);
+        txtIteamno = findViewById(R.id.Etiteamno);
+        txtTitle = findViewById(R.id.EtTitle);
         txtPrice = findViewById(R.id.Etprice);
-        txtServings = findViewById(R.id.Etservings);
+        txtAuthor = findViewById(R.id.EtAuthor);
         txtPreparation = findViewById(R.id.Etpreparation);
         txtCook =  findViewById(R.id.Etcook);
         txtTotal = findViewById(R.id.Ettotal);
@@ -75,8 +71,8 @@ public class Page3 extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Empty author", Toast.LENGTH_SHORT).show();
                 else if (TextUtils.isEmpty(txtPrice.getText().toString()))
                     Toast.makeText(getApplicationContext(), "Empty price", Toast.LENGTH_SHORT).show();
-                else if (TextUtils.isEmpty(txtServings.getText().toString()))
-                    Toast.makeText(getApplicationContext(), "Empty servings", Toast.LENGTH_SHORT).show();
+                else if (TextUtils.isEmpty(txtIteamno.getText().toString()))
+                    Toast.makeText(getApplicationContext(), "Empty iteam no", Toast.LENGTH_SHORT).show();
                 else if (TextUtils.isEmpty(txtCook.getText().toString()))
                     Toast.makeText(getApplicationContext(), "Empty cook time", Toast.LENGTH_SHORT).show();
                 else if (TextUtils.isEmpty(txtPreparation.getText().toString()))
@@ -87,7 +83,7 @@ public class Page3 extends AppCompatActivity {
                     usr.setTitle(txtTitle.getText().toString().trim());
                     usr.setAuthor(txtAuthor.getText().toString().trim());
                     usr.setPrice(Double.parseDouble(txtPrice.getText().toString().trim()));
-                    usr.setServings(Integer.parseInt(txtServings.getText().toString().trim()));
+                    usr.setIteamno(Integer.parseInt(txtIteamno.getText().toString().trim()));
                     usr.setCook(Double.parseDouble(txtCook.getText().toString().trim()));
                     usr.setPreparation(Double.parseDouble(txtPreparation.getText().toString().trim()));
                     usr.setTotal(Double.parseDouble(txtTotal.getText().toString().trim()));
@@ -97,23 +93,23 @@ public class Page3 extends AppCompatActivity {
                     //feedback from database
                     Toast.makeText(getApplicationContext(),"Data saved successfully", Toast.LENGTH_SHORT).show();
 
-                    String data1 = txtTitle.getText().toString();
-                    String data2 = txtAuthor.getText().toString();
+                    String data1 = txtIteamno.getText().toString();
+                    String data2 = txtTitle.getText().toString();
                     String data3 = txtPrice.getText().toString();
-                    String data4 = txtServings.getText().toString();
-                    String data6 = txtCook.getText().toString();
+                    String data4 = txtAuthor.getText().toString();
                     String data5 = txtPreparation.getText().toString();
+                    String data6 = txtCook.getText().toString();
                     String data7 = txtTotal.getText().toString();
 //
                     Intent i = new Intent(getApplicationContext(),Page5.class);
                     clearControls();
 //
-                    i.putExtra("ti",data1);
-                    i.putExtra("au",data2);
+                    i.putExtra("id",data1);
+                    i.putExtra("ti",data2);
                     i.putExtra("pr",data3);
-                    i.putExtra("se",data4);
-                    i.putExtra("co",data5);
-                    i.putExtra("pt",data6);
+                    i.putExtra("au",data4);
+                    i.putExtra("pt",data5);
+                    i.putExtra("co",data6);
                     i.putExtra("to",data7);
 
                     startActivity(i);

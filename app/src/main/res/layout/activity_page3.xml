@@ -28,19 +28,19 @@
         android:src="@drawable/icon" />
 
     <EditText
-        android:id="@+id/Ettitle"
+        android:id="@+id/Etiteamno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hintTitle"
+        android:hint="@string/Etiteamno"
         android:padding="10dp"
         android:textColorHint="@android:color/background_dark"
         android:textSize="19sp" />
 
     <EditText
-        android:id="@+id/Etauthor"
+        android:id="@+id/EtTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hintAuthor"
+        android:hint="@string/EtTitle"
         android:padding="10dp"
         android:textColorHint="@android:color/background_dark"
         android:textSize="19sp" />
@@ -55,10 +55,10 @@
         android:textSize="19sp" />
 
     <EditText
-        android:id="@+id/Etservings"
+        android:id="@+id/EtAuthor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hintServings"
+        android:hint="@string/EtAuthor"
         android:padding="10dp"
         android:textColorHint="@android:color/background_dark"
         android:textSize="19sp" />

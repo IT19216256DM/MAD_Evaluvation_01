@@ -4,13 +4,21 @@ public class User {
     private String title;
     private String author;
     private Double price;
-    private Integer servings;
+    private Integer iteamno;
     private Double preparation;
     private Double cook;
     private Double total;
 
     public User() {
 
+    }
+
+    public Integer getIteamno() {
+        return iteamno;
+    }
+
+    public void setIteamno(Integer iteamno) {
+        this.iteamno = iteamno;
     }
 
     public String getTitle() {
@@ -37,13 +45,6 @@ public class User {
         this.price = price;
     }
 
-    public Integer getServings() {
-        return servings;
-    }
-
-    public void setServings(Integer servings) {
-        this.servings = servings;
-    }
 
     public Double getPreparation() {
         return preparation;

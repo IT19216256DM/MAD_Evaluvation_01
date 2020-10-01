@@ -21,7 +21,7 @@ public class Page4 extends AppCompatActivity {
 
 
     //    EditText a,b,c,d,e,f,g;
-    EditText title,author,price,servings,preparation,cook,total;
+    EditText iteamno,title,author,price,preparation,cook,total;
     DatabaseReference dbRef;
     Button btn;
 
@@ -75,18 +75,18 @@ public class Page4 extends AppCompatActivity {
 //        f =findViewById(R.id.details6);
 //        g =findViewById(R.id.details7);
 
-        title =findViewById(R.id.details1);
-        author =findViewById(R.id.details2);
+        iteamno =findViewById(R.id.details1);
+        title =findViewById(R.id.details2);
         price =findViewById(R.id.details3);
-        servings =findViewById(R.id.details4);
+        author =findViewById(R.id.details4);
         preparation =findViewById(R.id.details5);
         cook =findViewById(R.id.details6);
         total =findViewById(R.id.details7);
 
+        String id = getIntent().getStringExtra("id");
         String ti = getIntent().getStringExtra("ti");
-        String au = getIntent().getStringExtra("au");
         String pr = getIntent().getStringExtra("pr");
-        String se = getIntent().getStringExtra("se");
+        String au = getIntent().getStringExtra("au");
         String pt = getIntent().getStringExtra("pt");
         String co = getIntent().getStringExtra("co");
         String to = getIntent().getStringExtra("to");
@@ -99,10 +99,10 @@ public class Page4 extends AppCompatActivity {
 //        f.setText(co);
 //        g.setText(to);
 
+        iteamno.setText(id);
         title.setText(ti);
-        author.setText(au);
         price.setText(pr);
-        servings.setText(se);
+        author.setText(au);
         preparation.setText(pt);
         cook.setText(co);
         total.setText(to);
@@ -121,10 +121,10 @@ public class Page4 extends AppCompatActivity {
 //                String co = f.getText().toString();
 //                String to = g.getText().toString();
 
+                String id = iteamno.getText().toString();
                 String ti = title.getText().toString();
-                String au = author.getText().toString();
                 String pr = price.getText().toString();
-                String se = servings.getText().toString();
+                String au = author.getText().toString();
                 String pt = preparation.getText().toString();
                 String co = cook.getText().toString();
                 String to = total.getText().toString();
@@ -141,10 +141,10 @@ public class Page4 extends AppCompatActivity {
 //                hashMap.put("f",co);
 //                hashMap.put("g",to);
 
+                hashMap.put("iteamno",id);
                 hashMap.put("title",ti);
-                hashMap.put("author",au);
                 hashMap.put("price",pr);
-                hashMap.put("servings",se);
+                hashMap.put("author",au);
                 hashMap.put("preparation",pt);
                 hashMap.put("cook",co);
                 hashMap.put("total",to);
