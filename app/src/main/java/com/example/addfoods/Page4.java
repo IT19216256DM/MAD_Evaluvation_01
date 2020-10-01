@@ -19,7 +19,8 @@ import java.util.HashMap;
 public class Page4 extends AppCompatActivity {
 
 
-    EditText a,b,c,d,e,f,g;
+//    EditText a,b,c,d,e,f,g;
+    EditText title,author,price,servings,preparation,cook,total;
     DatabaseReference dbRef;
     Button btn;
     @Override
@@ -54,15 +55,21 @@ public class Page4 extends AppCompatActivity {
 //                });
 
 
-        a =findViewById(R.id.details1);
-        b =findViewById(R.id.details2);
-        c =findViewById(R.id.details3);
-        d =findViewById(R.id.details4);
-        e =findViewById(R.id.details5);
-        f =findViewById(R.id.details6);
-        g =findViewById(R.id.details7);
+//        a =findViewById(R.id.details1);
+//        b =findViewById(R.id.details2);
+//        c =findViewById(R.id.details3);
+//        d =findViewById(R.id.details4);
+//        e =findViewById(R.id.details5);
+//        f =findViewById(R.id.details6);
+//        g =findViewById(R.id.details7);
 
-//        btn = findViewById(R.id.btnupdatedata);
+        title =findViewById(R.id.details1);
+        author =findViewById(R.id.details2);
+        price =findViewById(R.id.details3);
+        servings =findViewById(R.id.details4);
+        preparation =findViewById(R.id.details5);
+        cook =findViewById(R.id.details6);
+        total =findViewById(R.id.details7);
 
         String tit = getIntent().getStringExtra("tit");
         String aut = getIntent().getStringExtra("aut");
@@ -72,13 +79,21 @@ public class Page4 extends AppCompatActivity {
         String coo = getIntent().getStringExtra("coo");
         String tot = getIntent().getStringExtra("tot");
 
-        a.setText(tit);
-        b.setText(aut);
-        c.setText(pri);
-        d.setText(sec);
-        e.setText(pti);
-        f.setText(coo);
-        g.setText(tot);
+//        a.setText(tit);
+//        b.setText(aut);
+//        c.setText(pri);
+//        d.setText(sec);
+//        e.setText(pti);
+//        f.setText(coo);
+//        g.setText(tot);
+
+        title.setText(tit);
+        author.setText(aut);
+        price.setText(pri);
+        servings.setText(sec);
+        preparation.setText(pti);
+        cook.setText(coo);
+        total.setText(tot);
 
         btn = findViewById(R.id.btnupdatedata);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -86,25 +101,41 @@ public class Page4 extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                String tit = a.getText().toString();
-                String aut = b.getText().toString();
-                String pri = c.getText().toString();
-                String sec = d.getText().toString();
-                String pti = e.getText().toString();
-                String coo = f.getText().toString();
-                String tot = g.getText().toString();
+//                String tit = a.getText().toString();
+//                String aut = b.getText().toString();
+//                String pri = c.getText().toString();
+//                String sec = d.getText().toString();
+//                String pti = e.getText().toString();
+//                String coo = f.getText().toString();
+//                String tot = g.getText().toString();
 
-                dbRef = FirebaseDatabase.getInstance().getReference().child("Usrupd");
+                String tit = title.getText().toString();
+                String aut = author.getText().toString();
+                String pri = price.getText().toString();
+                String sec = servings.getText().toString();
+                String pti = preparation.getText().toString();
+                String coo = cook.getText().toString();
+                String tot = total.getText().toString();
+
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Usr9");
 
                 HashMap hashMap = new HashMap();
 
-                hashMap.put("a",tit);
-                hashMap.put("b",aut);
-                hashMap.put("c",pri);
-                hashMap.put("d",sec);
-                hashMap.put("e",pti);
-                hashMap.put("f",coo);
-                hashMap.put("g",tot);
+//                hashMap.put("a",tit);
+////                hashMap.put("b",aut);
+////                hashMap.put("c",pri);
+////                hashMap.put("d",sec);
+////                hashMap.put("e",pti);
+////                hashMap.put("f",coo);
+////                hashMap.put("g",tot);
+
+                hashMap.put("title",tit);
+                hashMap.put("author",aut);
+                hashMap.put("price",pri);
+                hashMap.put("servings",sec);
+                hashMap.put("preparation",pti);
+                hashMap.put("cook",coo);
+                hashMap.put("total",tot);
 
                 dbRef.child("Usr9").updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
                     @Override
