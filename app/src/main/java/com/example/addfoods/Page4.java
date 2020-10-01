@@ -83,21 +83,21 @@ public class Page4 extends AppCompatActivity {
 //        cook =findViewById(R.id.details6);
 //        total =findViewById(R.id.details7);
 
-        String ti = getIntent().getStringExtra("ti");
-        String au = getIntent().getStringExtra("au");
-        String pr = getIntent().getStringExtra("pr");
-        String se = getIntent().getStringExtra("se");
-        String pt = getIntent().getStringExtra("pt");
-        String co = getIntent().getStringExtra("co");
-        String to = getIntent().getStringExtra("to");
+        String tit = getIntent().getStringExtra("tit");
+        String aut = getIntent().getStringExtra("aut");
+        String pri = getIntent().getStringExtra("pri");
+        String sec = getIntent().getStringExtra("sec");
+        String pti = getIntent().getStringExtra("pti");
+        String coo = getIntent().getStringExtra("coo");
+        String tot = getIntent().getStringExtra("tot");
 
-        a.setText(ti);
-        b.setText(au);
-        c.setText(pr);
-        d.setText(se);
-        e.setText(pt);
-        f.setText(co);
-        g.setText(to);
+        a.setText(tit);
+        b.setText(aut);
+        c.setText(pri);
+        d.setText(sec);
+        e.setText(pti);
+        f.setText(coo);
+        g.setText(tot);
 
 //        title.setText(ti);
 //        author.setText(au);
