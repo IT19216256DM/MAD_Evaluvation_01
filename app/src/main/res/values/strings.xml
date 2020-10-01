@@ -56,4 +56,20 @@
     <string name="btndeletedata">DELETE DATA</string>
     <string name="btnsavedetails">SAVE DATA</string>
     <string name="btndeletedetails">DELETE DATA</string>
+    <string name="type2">Chicken Biriyani</string>
+    <string name="type2">Chicken Biriyani</string>
+    <string name="type1">Chicken Fried Rice</string>
+    <string name="price1">Rs.240</string>
+    <string name="price2">Rs.320</string>
+    <string name="authortype">Chinese Dragon Cafe</string>
+    <string name="price3">Rs.350</string>
+    <string name="type2">Chicken Biriyani</string>
+    <string name="type3">Prawn Fried Rice</string>
+    <string name="type4">Chicken Fried Rice</string>
+    <string name="price5">Rs.260</string>
+    <string name="headertop">Top Categories</string>
+    <string name="headertop1">Select User Type</string>
+    <string name="btnsoldout">SOLD OUT</string>
+    <string name="btnorder1">ORDER NOW</string>
+    <string name="btnorder2">ORDER NOW</string>
 </resources>
