@@ -93,7 +93,7 @@ public class Page3 extends AppCompatActivity {
                     usr.setTotal(Double.parseDouble(txtTotal.getText().toString().trim()));
                     //insert into the database
 //                    dbRef.push().setValue(usr);
-                    dbRef.child("Usr11").setValue(usr);
+                    dbRef.child("Usr12").setValue(usr);
                     //feedback from database
                     Toast.makeText(getApplicationContext(),"Data saved successfully", Toast.LENGTH_SHORT).show();
 
