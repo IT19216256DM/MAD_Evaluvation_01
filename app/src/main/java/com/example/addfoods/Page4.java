@@ -129,7 +129,7 @@ public class Page4 extends AppCompatActivity {
                 String coo = cook.getText().toString();
                 String tot = total.getText().toString();
 
-                dbRef = FirebaseDatabase.getInstance().getReference().child("User");
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Usr10");
 
                 HashMap hashMap = new HashMap();
 
@@ -149,7 +149,7 @@ public class Page4 extends AppCompatActivity {
                 hashMap.put("cook",coo);
                 hashMap.put("total",tot);
 
-                dbRef.child("User").updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
+                dbRef.child("Usr10").updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
                     @Override
                     public void onSuccess(Object o) {
                         Toast.makeText(getApplicationContext(),"Data updated successfully", Toast.LENGTH_SHORT).show();
