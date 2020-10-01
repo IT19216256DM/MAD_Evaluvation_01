@@ -49,7 +49,7 @@ public class MainActivity4 extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
                                    @Override
                                    public void onClick(View view) {
-                                       dbRef = FirebaseDatabase.getInstance().getReference().child("Employee");
+                                       dbRef = FirebaseDatabase.getInstance().getReference().child("Employee").child("Emp1");
                                        dbRef.addValueEventListener(new ValueEventListener() {
                                            @Override
                                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
