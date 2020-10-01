@@ -39,11 +39,10 @@
         app:layout_constraintVertical_bias="0.744" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/cardNumber"
         android:layout_width="226dp"
         android:layout_height="85dp"
         android:ems="10"
-        android:hint="@string/card_Number"
         android:inputType="textPersonName"
         android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,51 +53,48 @@
         app:layout_constraintVertical_bias="0.157" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/epiryDate"
         android:layout_width="188dp"
         android:layout_height="74dp"
         android:layout_marginTop="64dp"
         android:ems="10"
-        android:hint="@string/expiryDate"
         android:inputType="textPersonName"
         android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber"
+        app:layout_constraintVertical_bias="0.009" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/cvvNumber"
         android:layout_width="166dp"
         android:layout_height="71dp"
         android:ems="10"
-        android:hint="@string/cvv"
         android:inputType="textPersonName"
         android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintStart_toEndOf="@+id/epiryDate"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.384" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/cardHolderName"
         android:layout_width="265dp"
         android:layout_height="69dp"
         android:layout_marginTop="39dp"
         android:layout_marginBottom="49dp"
         android:ems="10"
-        android:hint="@string/CardHolder"
         android:inputType="textPersonName"
         android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
         app:layout_constraintBottom_toTopOf="@+id/btnViewPay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/epiryDate"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -128,6 +124,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toEndOf="@+id/btnViewPay"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/cvvNumber"
         app:layout_constraintVertical_bias="0.506" />
 </androidx.constraintlayout.widget.ConstraintLayout>

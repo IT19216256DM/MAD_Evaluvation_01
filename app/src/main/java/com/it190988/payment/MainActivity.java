@@ -22,7 +22,7 @@ import com.google.firebase.database.DatabaseReference;
 public class MainActivity extends AppCompatActivity {
 
     EditText txtPID,txtcardNum,txtexpDate,txtcvvNum,txtcardHolder;
-     private Button addPayBtn,deletePayBtn,viewPayBtn,updatePayBtn;
+     private Button addPayBtn;
 
     DatabaseReference dbRef;
 
@@ -45,14 +45,6 @@ public class MainActivity extends AppCompatActivity {
         updatePayBtn=findViewById(R.id.btnUpdatePay);
 
         payDetail = new payment_details();
-
-//       addPayBtn.setOnClickListener(new View.OnClickListener() {
-//           @Override
-//           public void onClick(View view) {
-//               openpayment2();
-//           }
-//       });
-
 
 
 //
@@ -117,10 +109,7 @@ public class MainActivity extends AppCompatActivity {
         addPayBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                addPayBtn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        openpayment2();
+
                         dbRef = FirebaseDatabase.getInstance().getReference().child("payment_details");
                         try {
                             if (TextUtils.isEmpty(txtcardNum.getText().toString()))
@@ -138,7 +127,21 @@ public class MainActivity extends AppCompatActivity {
                                 payDetail.setDate(txtcardHolder.getText().toString().trim());
                                 dbRef.child("Payment1").setValue(payDetail);
                                 Toast.makeText(getApplicationContext(), "Sucessfully inserted", Toast.LENGTH_SHORT).show();
+                                int data1=Integer.parseInt(txtcardNum.getText().toString());
+                                int data2=Integer.parseInt(txtexpDate.getText().toString());
+                                int data3=Integer.parseInt(txtcvvNum.getText().toString());
+                                String data4=txtcardHolder.getText().toString();
+
+                                Intent i=new Intent(getApplicationContext(),payment2.class);
                                 clearControls();
+
+                                i.putExtra("cardno",data1);
+                                i.putExtra("date",data2);
+                                i.putExtra("cvv",data3);
+                                i.putExtra("holderName",data4);
+
+                                startActivity(i);
+
                             }
                         } catch (NumberFormatException nfe) {
                             Toast.makeText(getApplicationContext(), "Successfully inserted", Toast.LENGTH_SHORT).show();
@@ -150,8 +153,8 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
-        });
-    }
+
+
 
 
 
@@ -161,10 +164,10 @@ public class MainActivity extends AppCompatActivity {
         txtcvvNum.setText("");
         txtcardHolder.setText("");
     }
-    public void openpayment2(){
-        Intent intent=new Intent(this,payment2.class);
-        startActivity(intent);
-    }
+//    public void openpayment2(){
+//        Intent intent=new Intent(this,payment2.class);
+//        startActivity(intent);
+//    }
 
 
     }
