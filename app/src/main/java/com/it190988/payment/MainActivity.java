@@ -40,69 +40,20 @@ public class MainActivity extends AppCompatActivity {
         txtcardHolder = findViewById(R.id.etInputCardHolderName);
 
         addPayBtn = (Button) findViewById(R.id.payBtn);
-        deletePayBtn=findViewById(R.id.btnDeletePay);
-        viewPayBtn=findViewById(R.id.btnViewPay);
-        updatePayBtn=findViewById(R.id.btnUpdatePay);
+//        deletePayBtn=findViewById(R.id.btnDeletePay);
+//        viewPayBtn=findViewById(R.id.btnViewPay);
+//        updatePayBtn=findViewById(R.id.btnUpdatePay);
 
         payDetail = new payment_details();
 
 
-//
-//        deletePayBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                dbRef=FirebaseDatabase.getInstance().getReference().child("payDetail").child("");
-//                dbRef.removeValue();
-//                Toast.makeText(getApplicationContext(),"sucessfully deleteed", Toast.LENGTH_SHORT).show();
-//
-//            }
-//        });
-//
-//
-//
-//        updatePayBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                dbRef=FirebaseDatabase.getInstance().getReference();
-//                dbRef.child("payDetail").child("//pay1").child("//cardnumber").setValue(txtcardHolder.getText().toString().trim());
-//                dbRef.child("payDetail/pay1/cardnumber").setValue(txtexpDate.getText().toString().trim());
-//                Toast.makeText(getApplicationContext(),"text sucessfully updated",Toast.LENGTH_SHORT).show();
-//                clearControls();
-//
-//            }
-//        });
 
 
 
-//
-//        viewPayBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                dbRef=FirebaseDatabase.getInstance().getReference().child("payDetail/pay1");
-//                dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                        if (dataSnapshot.hasChildren()){
-//                            txtcardNum.setText(dataSnapshot.child("cardNum").getValue().toString());
-//                            txtexpDate.setText(dataSnapshot.child("expiry date").getValue().toString());
-//                            txtcvvNum.setText(dataSnapshot.child("cvv no").getValue().toString());
-//                            txtcardHolder.setText(dataSnapshot.child("card holder name").getValue().toString());
-//                            //Aru pani yestai garne
-//                        }
-//                        else
-//                            Toast.makeText(getApplicationContext()," Cannot find pay1", Toast.LENGTH_SHORT).show();
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(@NonNull DatabaseError databaseError) {
-//
-//                    }
-//                });
-//
-//            }
-//        });
-//
+
+
+
+
 
 
 
