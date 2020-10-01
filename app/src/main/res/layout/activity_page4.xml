@@ -25,6 +25,7 @@
             android:layout_width="230dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
+            android:contentDescription="@string/usefordisplay"
             android:padding="20dp"
             android:src="@drawable/imageicon" />
 
@@ -33,34 +34,44 @@
             android:layout_width="match_parent"
             android:layout_height="53dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:hint="@string/updatedata1"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/details2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:hint="@string/updatedata2"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/details3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:hint="@string/updatedata3"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/details4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
+            android:hint="@string/updatedata4"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/details5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
+            android:hint="@string/updatedata5"
             android:inputType="textPersonName" />
 
         <EditText
@@ -68,6 +79,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/updatedata6"
+            android:importantForAutofill="no"
             android:inputType="textPersonName" />
 
         <EditText
@@ -75,6 +88,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/updatedata7"
+            android:importantForAutofill="no"
             android:inputType="textPersonName" />
 
         <Button

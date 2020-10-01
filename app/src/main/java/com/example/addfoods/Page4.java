@@ -52,15 +52,16 @@ public class Page4 extends AppCompatActivity {
                 usr.setID(id.getText().toString().trim());
                 ID = usr.getID();
 
-                dbRef.child("User").child(ID).child("author").setValue(id.getText().toString().trim());
-                dbRef.child("User").child(ID).child("cook").setValue(Double.parseDouble(id.getText().toString().trim()));
+                dbRef.child("User").child(ID).child("author").setValue(author.getText().toString().trim());
+                dbRef.child("User").child(ID).child("cook").setValue(Double.parseDouble(cook.getText().toString().trim()));
                 dbRef.child("User").child(ID).child("id").setValue(id.getText().toString().trim());
-                dbRef.child("User").child(ID).child("preparation").setValue(id.getText().toString().trim());
-                dbRef.child("User").child(ID).child("price").setValue(Double.parseDouble(id.getText().toString().trim()));
-                dbRef.child("User").child(ID).child("title").setValue(Double.parseDouble(id.getText().toString().trim()));
-                dbRef.child("User").child(ID).child("total").setValue(Double.parseDouble(id.getText().toString().trim()));
+                dbRef.child("User").child(ID).child("preparation").setValue(Double.parseDouble(preparation.getText().toString().trim()));
+                dbRef.child("User").child(ID).child("price").setValue(Double.parseDouble(price.getText().toString().trim()));
+                dbRef.child("User").child(ID).child("title").setValue(title.getText().toString().trim());
+                dbRef.child("User").child(ID).child("total").setValue(Double.parseDouble(total.getText().toString().trim()));
 
                 Toast.makeText(getApplicationContext(),"Updated Successfully", Toast.LENGTH_SHORT).show();
+                clear();
 
 
             }
