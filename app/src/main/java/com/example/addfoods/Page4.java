@@ -3,6 +3,7 @@ package com.example.addfoods;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
@@ -23,6 +24,17 @@ public class Page4 extends AppCompatActivity {
     EditText title,author,price,servings,preparation,cook,total;
     DatabaseReference dbRef;
     Button btn;
+
+    private void clearControls(){
+        title.setText("");
+        author.setText("");
+        price.setText("");
+        servings.setText("");
+        cook.setText("");
+        preparation.setText("");
+        total.setText("");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -147,6 +159,19 @@ public class Page4 extends AppCompatActivity {
 
 //                Intent intent =new Intent(Page4.this,MainActivity.class);
 //                startActivity(intent);
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                clearControls();
+//
+                i.putExtra("ti",ti);
+                i.putExtra("au",au);
+                i.putExtra("pr",pr);
+                i.putExtra("se",se);
+                i.putExtra("co",co);
+                i.putExtra("pt",pt);
+                i.putExtra("to",to);
+
+                startActivity(i);
+
             }
         });
     }
