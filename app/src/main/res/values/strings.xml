@@ -107,4 +107,11 @@
     <string name="updatedata4new">Enter Food Owner</string>
     <string name="btnupdatenew">UPDATE</string>
     <string name="btndeletenew">DELETE</string>
+    <string name="retrievehint1">Food ID</string>
+    <string name="retrievehint2">Food Name</string>
+    <string name="retrievehint3">Food price</string>
+    <string name="retrievehint4">Food Owner</string>
+    <string name="retrievehint5">Preparation Time</string>
+    <string name="retrievehint6">Cook Time</string>
+    <string name="retrievehint7">Total time</string>
 </resources>

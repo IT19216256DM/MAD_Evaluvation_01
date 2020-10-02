@@ -27,56 +27,72 @@
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:padding="20dp"
-        android:src="@drawable/imageicon" />
+        android:src="@drawable/picture" />
 
     <EditText
         android:id="@+id/viewId"
         android:layout_width="match_parent"
         android:layout_height="53dp"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:hint="@string/retrievehint1"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/viewtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:hint="@string/retrievehint2"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/viewPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:hint="@string/retrievehint3"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/viewauthor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:hint="@string/retrievehint4"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/viewPreparationtime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:hint="@string/retrievehint5"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/viewCooktime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:hint="@string/retrievehint6"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/viewTotaltime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:hint="@string/retrievehint7"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btneditdata"
