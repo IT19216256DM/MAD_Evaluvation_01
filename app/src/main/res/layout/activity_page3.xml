@@ -41,7 +41,7 @@
         android:id="@+id/EtTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/EtTitle"
+        android:hint="@string/EtTitleNew"
         android:padding="10dp"
         android:textColorHint="@android:color/background_dark"
         android:textSize="19sp" />
@@ -59,7 +59,7 @@
         android:id="@+id/EtAuthor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/EtAuthor"
+        android:hint="@string/EtAuthornew"
         android:padding="10dp"
         android:textColorHint="@android:color/background_dark"
         android:textSize="19sp" />

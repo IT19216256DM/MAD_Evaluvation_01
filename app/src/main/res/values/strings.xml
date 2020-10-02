@@ -101,4 +101,10 @@
     <string name="displaypurpose">TODO</string>
     <string name="todisplaypic">TODO</string>
     <string name="displaypic">TODO</string>
+    <string name="EtTitleNew">Enter Food Name</string>
+    <string name="EtAuthornew">Enter Food Owner</string>
+    <string name="updatedata2new">Enter Food Name</string>
+    <string name="updatedata4new">Enter Food Owner</string>
+    <string name="btnupdatenew">UPDATE</string>
+    <string name="btndeletenew">DELETE</string>
 </resources>
