@@ -78,6 +78,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        button = (Button) findViewById(R.id.Deletefoodbtn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this, DeleteFoods.class);
+                startActivity(intent);
+
+                Context context = getApplicationContext();
+                CharSequence message = "Delete food details";
+
+
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, message, duration);
+                toast.show();
+                toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, 0);
+            }
+        });
+
 
     }
 }

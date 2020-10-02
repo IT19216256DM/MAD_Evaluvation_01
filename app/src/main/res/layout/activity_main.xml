@@ -21,7 +21,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/adding" />
+        app:srcCompat="@drawable/adding"
+        android:contentDescription="@string/domore" />
 
     <Button
         android:id="@+id/Addfoodbtn"
@@ -92,7 +93,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/foodplate" />
+        app:srcCompat="@drawable/foodplate"
+        android:contentDescription="@string/todomoree" />
 
     <TextView
         android:id="@+id/menutext"
@@ -104,10 +106,11 @@
         android:layout_marginEnd="138dp"
         android:layout_marginRight="138dp"
         android:layout_marginBottom="610dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="cursive"
         android:text="@string/menufood"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,6 +130,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/waiterser" />
+        app:srcCompat="@drawable/waiterser"
+        android:contentDescription="@string/todisplayy" />
+
+    <Button
+        android:id="@+id/Deletefoodbtn"
+        android:layout_width="149dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="229dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="632dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/button_backg"
+        android:text="@string/Deletefoodbtn"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

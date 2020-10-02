@@ -14,11 +14,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="sans-serif-black"
+            android:fontFamily="cursive"
             android:text="@string/updatefooddata"
             android:textColor="@android:color/black"
             android:textColorLink="@android:color/background_dark"
-            android:textSize="36sp" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/uploadedImg"
@@ -102,15 +103,6 @@
             android:textColor="@android:color/black"
             android:textColorHighlight="@android:color/holo_green_dark"
             android:textSize="18sp" />
-
-        <Button
-            android:id="@+id/btndeletedetails"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:background="@drawable/button_backg"
-            android:textSize="18sp"
-            android:text="@string/btndeletedetails" />
 
 
 </LinearLayout>

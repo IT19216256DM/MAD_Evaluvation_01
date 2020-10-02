@@ -84,4 +84,12 @@
     <string name="updatedata6">Enter Cook Time</string>
     <string name="updatedata7">Enter Total Time</string>
     <string name="usefordisplay">usefordisplay</string>
+    <string name="Deletefoodbtn">DELETE FOODS</string>
+    <string name="domore">TODO</string>
+    <string name="todomoree">TODO</string>
+    <string name="todisplayy">TODO</string>
+    <string name="buttondelete">DELETE DATA</string>
+    <string name="deletefoodid">Enter Food ID</string>
+    <string name="Deletetext">Delete Food Details</string>
+    <string name="btnfoodlist">VIEW FOOD LIST</string>
 </resources>
