@@ -80,7 +80,7 @@
             android:layout_width="120dp"
             android:layout_height="57dp"
             android:background="@android:color/holo_green_dark"
-            android:text="view"
+            android:text="Register"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"

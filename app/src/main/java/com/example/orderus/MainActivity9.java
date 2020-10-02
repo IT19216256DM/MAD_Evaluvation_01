@@ -34,7 +34,6 @@ public class MainActivity9 extends AppCompatActivity {
         setContentView(R.layout.activity_main9);
 
 
-
         txtUser = findViewById(R.id.uname);
         txtPass = findViewById(R.id.pass);
 
@@ -60,7 +59,7 @@ public class MainActivity9 extends AppCompatActivity {
 
                         Toast.makeText(getApplicationContext(), "data saved successfully", Toast.LENGTH_SHORT).show();
 
-                        Intent i = new Intent(getApplicationContext(),MainActivity8.class);
+                        Intent i = new Intent(getApplicationContext(), MainActivity8.class);
                         startActivity(i);
                         clearControls();
 
@@ -70,13 +69,18 @@ public class MainActivity9 extends AppCompatActivity {
                 }
             }
         });
+
+        reg = findViewById(R.id.button19);
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),MainActivity10.class);
-                startActivity(i);
-                clearControls();
+                openMainActivity10();
             }
         });
     }
+    public void openMainActivity10(){
+        Intent intent = new Intent(this, MainActivity10.class);
+        startActivity(intent);
+    }
+
 }

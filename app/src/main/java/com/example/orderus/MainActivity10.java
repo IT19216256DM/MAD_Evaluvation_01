@@ -79,6 +79,7 @@ public class MainActivity10 extends AppCompatActivity {
 
 
                         Intent i = new Intent(getApplicationContext(), MainMenu.class);
+                        startActivity(i);
                         clearControls();
 
 

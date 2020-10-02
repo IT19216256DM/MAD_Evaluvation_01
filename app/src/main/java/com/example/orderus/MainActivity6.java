@@ -57,7 +57,7 @@ public class MainActivity6 extends AppCompatActivity {
 
                         Toast.makeText(getApplicationContext(), "data saved successfully", Toast.LENGTH_SHORT).show();
 
-                        Intent i = new Intent(getApplicationContext(),MainMenu.class);
+                        Intent i = new Intent(getApplicationContext(), MainMenu.class);
                         startActivity(i);
                         clearControls();
 
@@ -68,17 +68,19 @@ public class MainActivity6 extends AppCompatActivity {
             }
         });
 
+
+        reg = findViewById(R.id.button20);
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent i = new Intent(getApplicationContext(),MainActivity10.class);
-                startActivity(i);
-                clearControls();
-
+                openMainActivity10();
             }
         });
+    }
+        public void openMainActivity10(){
+            Intent intent = new Intent(this, MainActivity10.class);
+            startActivity(intent);
+        }
 
     }
 
-}
