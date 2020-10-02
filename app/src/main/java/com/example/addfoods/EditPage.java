@@ -61,6 +61,7 @@ public class EditPage extends AppCompatActivity {
                 dbRef.child("User").child(ID).child("total").setValue(Double.parseDouble(total.getText().toString().trim()));
 
                 Toast.makeText(getApplicationContext(),"Updated Successfully", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 clear();
 
 
