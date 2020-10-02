@@ -74,12 +74,12 @@ public class MainActivity9 extends AppCompatActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openMainActivity10();
+                openMainActivity11();
             }
         });
     }
-    public void openMainActivity10(){
-        Intent intent = new Intent(this, MainActivity10.class);
+    public void openMainActivity11(){
+        Intent intent = new Intent(this, MainActivity11.class);
         startActivity(intent);
     }
 
