@@ -28,7 +28,7 @@
             android:layout_gravity="center"
             android:contentDescription="@string/usefordisplay"
             android:padding="20dp"
-            android:src="@drawable/imageicon" />
+            android:src="@drawable/picture" />
 
         <EditText
             android:id="@+id/details1"

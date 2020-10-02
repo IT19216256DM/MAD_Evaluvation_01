@@ -46,7 +46,8 @@ public class DeletePage extends AppCompatActivity {
                 db.removeValue();
                 Toast.makeText(getApplicationContext(),"Delete Successfully", Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent =new Intent(DeletePage.this, MainActivity.class);
+                startActivity(intent);
                 clearControls();
             }
         });
