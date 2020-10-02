@@ -2,6 +2,7 @@ package com.example.addfoods;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,11 @@ public class DeletePage extends AppCompatActivity {
     DatabaseReference db;
     User usr;
     private String ID;
+
+    private void clearControls(){
+        txtID.setText("");
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +45,9 @@ public class DeletePage extends AppCompatActivity {
                 db = FirebaseDatabase.getInstance().getReference().child("User").child(ID);
                 db.removeValue();
                 Toast.makeText(getApplicationContext(),"Delete Successfully", Toast.LENGTH_SHORT).show();
+
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                clearControls();
             }
         });
 

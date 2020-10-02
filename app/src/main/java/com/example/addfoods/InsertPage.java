@@ -123,15 +123,7 @@ public class InsertPage extends AppCompatActivity {
 
         });
     }
-//    private void clearControls(){
-//        txtTitle.setText("");
-//        txtAuthor.setText("");
-//        txtPrice.setText("");
-//        txtServings.setText("");
-//        txtCook.setText("");
-//        txtPreparation.setText("");
-//        txtTotal.setText("");
-//    }
+
 }
 
 

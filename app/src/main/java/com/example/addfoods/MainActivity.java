@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
                 Context context = getApplicationContext();
-                CharSequence message = "Search food details";
+                CharSequence message = "Order foods";
 
 
                 int duration = Toast.LENGTH_SHORT;
