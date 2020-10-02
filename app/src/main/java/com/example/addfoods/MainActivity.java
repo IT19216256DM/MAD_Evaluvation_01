@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MainActivity.this,Page3.class);
+                Intent intent =new Intent(MainActivity.this, InsertPage.class);
                 startActivity(intent);
 
                 Context context = getApplicationContext();
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MainActivity.this, Page4.class);
+                Intent intent =new Intent(MainActivity.this, EditPage.class);
                 startActivity(intent);
 
                 Context context = getApplicationContext();
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MainActivity.this, SearchfoodPage1.class);
+                Intent intent =new Intent(MainActivity.this, SearchFoodPage.class);
                 startActivity(intent);
 
                 Context context = getApplicationContext();
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MainActivity.this, DeleteFoods.class);
+                Intent intent =new Intent(MainActivity.this, DeletePage.class);
                 startActivity(intent);
 
                 Context context = getApplicationContext();

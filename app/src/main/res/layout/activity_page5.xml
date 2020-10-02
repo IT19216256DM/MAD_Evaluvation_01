@@ -7,18 +7,19 @@
     android:layout_height="match_parent"
     android:background="@drawable/back"
     android:orientation="vertical"
-    tools:context=".Page5">
+    tools:context=".RetrievePage">
 
     <TextView
         android:id="@+id/displaytext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="cursive"
         android:text="@string/topic4"
         android:textColor="@android:color/black"
         android:textColorLink="@android:color/background_dark"
-        android:textSize="36sp" />
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/uploadedImg"
@@ -86,7 +87,9 @@
         android:text="@string/btneditdata"
         android:textColor="@android:color/black"
         android:textColorHighlight="@android:color/holo_green_dark"
-        android:textSize="18sp" />
+        android:textSize="20sp"
+        android:textStyle="italic"
+        tools:text="EDIT" />
 
     <Button
         android:id="@+id/buttonsavedetails"
@@ -94,8 +97,11 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:background="@drawable/button_backg"
-        android:textSize="18sp"
-        android:text="@string/btnsavedetails" />
+        android:text="@string/btnsavedetails"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        tools:text="SAVE" />
 
 
     <!--    <LinearLayout-->

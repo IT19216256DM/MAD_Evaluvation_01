@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 
 
-public class Page5 extends AppCompatActivity {
+public class RetrievePage extends AppCompatActivity {
 
     TextView iteamno,title, author, price, preparation, cook, total;
     DatabaseReference dbRef;
@@ -39,7 +39,7 @@ public class Page5 extends AppCompatActivity {
         butsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(Page5.this,MainActivity.class);
+                Intent intent =new Intent(RetrievePage.this,MainActivity.class);
                 startActivity(intent);
 
                 Context context = getApplicationContext();
@@ -92,7 +92,7 @@ public class Page5 extends AppCompatActivity {
                 String data6 = cook.getText().toString();
                 String data7 = total.getText().toString();
 
-                Intent i = new Intent(getApplicationContext(), Page4.class);
+                Intent i = new Intent(getApplicationContext(), EditPage.class);
                 clearControls();
                 
                 i.putExtra("id", data1);

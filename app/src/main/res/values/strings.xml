@@ -92,4 +92,13 @@
     <string name="deletefoodid">Enter Food ID</string>
     <string name="Deletetext">Delete Food Details</string>
     <string name="btnfoodlist">VIEW FOOD LIST</string>
+    <string name="appname">OrderUs</string>
+    <string name="foodhome">Food home</string>
+    <string name="orderfoods">ORDER FOODS</string>
+    <string name="todisplay">TODO</string>
+    <string name="fordisplay">TODO</string>
+    <string name="topiceditfooddata">Edit Food Details</string>
+    <string name="displaypurpose">TODO</string>
+    <string name="todisplaypic">TODO</string>
+    <string name="displaypic">TODO</string>
 </resources>

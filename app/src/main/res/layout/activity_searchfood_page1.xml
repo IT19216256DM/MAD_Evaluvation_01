@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back2"
-    tools:context=".SearchfoodPage1">
+    tools:context=".SearchFoodPage">
 
 
     <TextView
@@ -70,18 +70,19 @@
         android:id="@+id/imageView"
         android:layout_width="312dp"
         android:layout_height="182dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
         android:layout_marginTop="275dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginRight="58dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
         android:layout_marginBottom="274dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/biriyani" />
+        app:srcCompat="@drawable/biriyani"
+        android:contentDescription="@string/displaypurpose" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -97,7 +98,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/seafoods" />
+        app:srcCompat="@drawable/seafoods"
+        android:contentDescription="@string/todisplaypic" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -108,14 +110,15 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="65dp"
         android:layout_marginRight="65dp"
-        android:layout_marginBottom="483dp"
+        android:layout_marginBottom="482dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.489"
-        app:srcCompat="@drawable/chicken" />
+        app:srcCompat="@drawable/chicken"
+        android:contentDescription="@string/displaypic" />
 
     <TextView
         android:id="@+id/type2"
@@ -178,15 +181,16 @@
         android:id="@+id/headertop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginEnd="199dp"
-        android:layout_marginRight="199dp"
-        android:layout_marginBottom="687dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginRight="195dp"
+        android:layout_marginBottom="686dp"
         android:fontFamily="cursive"
         android:text="@string/headertop"
         android:textColor="@android:color/black"
-        android:textSize="36sp"
+        android:textSize="38sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

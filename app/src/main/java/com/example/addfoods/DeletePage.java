@@ -11,7 +11,7 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class DeleteFoods extends AppCompatActivity {
+public class DeletePage extends AppCompatActivity {
 
     EditText txtID;
     Button button;

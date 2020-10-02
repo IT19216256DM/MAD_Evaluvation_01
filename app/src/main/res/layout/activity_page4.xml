@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/back"
     android:orientation="vertical"
-    tools:context=".Page4">
+    tools:context=".EditPage">
 
         <TextView
             android:id="@+id/topicupdate"
@@ -15,10 +15,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="cursive"
-            android:text="@string/updatefooddata"
+            android:text="@string/topiceditfooddata"
             android:textColor="@android:color/black"
             android:textColorLink="@android:color/background_dark"
-            android:textSize="30sp"
+            android:textSize="38sp"
             android:textStyle="bold" />
 
         <ImageView
@@ -102,7 +102,9 @@
             android:text="@string/btnupdatedata"
             android:textColor="@android:color/black"
             android:textColorHighlight="@android:color/holo_green_dark"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            tools:text="UPDATE" />
 
 
 </LinearLayout>

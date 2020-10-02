@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 
 
-public class Page4 extends AppCompatActivity {
+public class EditPage extends AppCompatActivity {
 
 
     //    EditText a,b,c,d,e,f,g;

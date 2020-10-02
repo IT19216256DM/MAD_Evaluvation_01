@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class Page3 extends AppCompatActivity {
+public class InsertPage extends AppCompatActivity {
 
     EditText txtIteamno,txtTitle, txtAuthor, txtPrice, txtPreparation, txtCook, txtTotal;
     Button butAdd;
@@ -103,7 +103,7 @@ public class Page3 extends AppCompatActivity {
                     String data6 = txtCook.getText().toString();
                     String data7 = txtTotal.getText().toString();
 //
-                    Intent i = new Intent(getApplicationContext(),Page5.class);
+                    Intent i = new Intent(getApplicationContext(), RetrievePage.class);
                     clearControls();
 //
                     i.putExtra("id",data1);
