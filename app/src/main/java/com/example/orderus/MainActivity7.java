@@ -60,32 +60,32 @@ public class MainActivity7 extends AppCompatActivity {
 
 
             public void onClick(View view) {
-                String idd = a.getText().toString();
-                String nmm = b.getText().toString();
-                String ade = c.getText().toString();
-                String pht = d.getText().toString();
-                String eml = e.getText().toString();
-                String own = f.getText().toString();
+                String i = a.getText().toString();
+                String n = b.getText().toString();
+                String m = c.getText().toString();
+                String p = d.getText().toString();
+                String o = e.getText().toString();
+                String q = f.getText().toString();
 
 
                 dbRef = FirebaseDatabase.getInstance().getReference().child("Employee");
 
                 HashMap hashMap = new HashMap();
 
-                hashMap.put("a", idd);
-                hashMap.put("b", nmm);
-                hashMap.put("c", ade);
-                hashMap.put("d", pht);
-                hashMap.put("e", eml);
-                hashMap.put("f", own);
+                hashMap.put("txtId", i);
+                hashMap.put("txtName", n);
+                hashMap.put("txtAdd", m);
+                hashMap.put("txtNum", p);
+                hashMap.put("txtMail", o);
+                hashMap.put("txtOwn", q);
 
 
                 dbRef.child("Emp1").updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
                     @Override
                     public void onSuccess(Object o) {
                         Toast.makeText(getApplicationContext(), "Successfully Updated", Toast.LENGTH_LONG).show();
-                        //Intent i = new Intent(getApplicationContext(), ViewPage.class);
-                        //startActivity(i);
+                        Intent i = new Intent(getApplicationContext(), MainActivity4.class);
+                        startActivity(i);
                     }
                 });
             }

@@ -21,7 +21,7 @@ public class MainActivity4 extends AppCompatActivity {
 
 
     TextView a, b, c, d,e,f;
-    Button btn,btn1,btn2;
+    Button btn1,btn2;
 
     DatabaseReference dbRef;
 
@@ -42,7 +42,7 @@ public class MainActivity4 extends AppCompatActivity {
         e=(TextView)findViewById(R.id.textView17);
         f=(TextView)findViewById(R.id.textView18);
 
-        btn=(Button)findViewById(R.id.button6);
+
         btn1=(Button)findViewById(R.id.button7);
         btn2=(Button)findViewById(R.id.button16);
 
@@ -126,6 +126,8 @@ public class MainActivity4 extends AppCompatActivity {
                             dbRef[0] =FirebaseDatabase.getInstance().getReference().child("Employee").child("Emp1");
                             dbRef[0].removeValue();
                             Toast.makeText(getApplicationContext(),"Data Deleted Successfully",Toast.LENGTH_LONG).show();
+
+
 
                         }
                         else
