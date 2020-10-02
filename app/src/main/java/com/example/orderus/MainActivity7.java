@@ -68,7 +68,7 @@ public class MainActivity7 extends AppCompatActivity {
                 String own = f.getText().toString();
 
 
-                dbRef = FirebaseDatabase.getInstance().getReference().child("Emp1");
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Employee");
 
                 HashMap hashMap = new HashMap();
 

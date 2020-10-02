@@ -46,53 +46,44 @@ public class MainActivity4 extends AppCompatActivity {
         btn1=(Button)findViewById(R.id.button7);
         btn2=(Button)findViewById(R.id.button16);
 
-        btn.setOnClickListener(new View.OnClickListener() {
-                                   @Override
-                                   public void onClick(View view) {
-                                       dbRef = FirebaseDatabase.getInstance().getReference().child("Employee").child("Emp1");
-                                       dbRef.addValueEventListener(new ValueEventListener() {
+              /*  String as = getIntent().getStringExtra("aa");
+                  String bs = getIntent().getStringExtra("bb");
+                   String cs = getIntent().getStringExtra("cc");
+                    String ds = getIntent().getStringExtra("dd");
+                     String es = getIntent().getStringExtra("ee");
+                      String fs = getIntent().getStringExtra("ff");
+
+                      a.setText(as);
+                      b.setText(bs);
+                      c.setText(cs);
+                      d.setText(ds);
+                      e.setText(es);
+                      f.setText(fs); */
+
+
+
+
+                                 DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("Employee").child("Emp1");
+                                       dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
                                            @Override
                                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                               if (dataSnapshot.hasChildren()) {
+                                                   a.setText(dataSnapshot.child("txtId").getValue().toString());
+                                                   b.setText(dataSnapshot.child("txtName").getValue().toString());
+                                                   c.setText(dataSnapshot.child("txtAdd").getValue().toString());
+                                                   d.setText(dataSnapshot.child("txtNum").getValue().toString());
+                                                   e.setText(dataSnapshot.child("txtMail").getValue().toString());
+                                                   f.setText(dataSnapshot.child("txtOwn").getValue().toString());
 
-                                               String txtId = dataSnapshot.child("txtId").getValue().toString();
-                                               String txtName = dataSnapshot.child("txtName").getValue().toString();
-                                               String txtAdd = dataSnapshot.child("txtAdd").getValue().toString();
-                                               String txtNum = dataSnapshot.child("txtNum").getValue().toString();
-                                               String txtMail = dataSnapshot.child("txtMail").getValue().toString();
-                                               String txtOwn = dataSnapshot.child("txtOwn").getValue().toString();
-
-
-                                               a.setText(txtId);
-                                               b.setText(txtName);
-                                               c.setText(txtAdd);
-                                               d.setText(txtNum);
-                                               e.setText(txtMail);
-                                               f.setText(txtOwn);
-
+                                               } else
+                                                   Toast.makeText(getApplicationContext(), "No Source to Display", Toast.LENGTH_SHORT).show();
                                            }
-
                                            @Override
                                            public void onCancelled(@NonNull DatabaseError databaseError) {
 
                                            }
                                        });
-                                   }
-                               });
 
-        String idd = getIntent().getStringExtra("idd");
-        String nmm = getIntent().getStringExtra("nmm");
-        String ade = getIntent().getStringExtra("ade");
-        String pht = getIntent().getStringExtra("pht");
-        String eml = getIntent().getStringExtra("eml");
-        String own = getIntent().getStringExtra("own");
-
-
-        a.setText(idd);
-        b.setText(nmm);
-        c.setText(ade);
-        d.setText(pht);
-        e.setText(eml);
-        f.setText(own);
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -127,12 +118,12 @@ public class MainActivity4 extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final DatabaseReference[] dbRef = {FirebaseDatabase.getInstance().getReference().child("Emp1")};
+                final DatabaseReference[] dbRef = {FirebaseDatabase.getInstance().getReference().child("Employee")};
                 dbRef[0].addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if(snapshot.hasChild("Emp1")){
-                            dbRef[0] =FirebaseDatabase.getInstance().getReference().child("Emp1").child("Emp1");
+                            dbRef[0] =FirebaseDatabase.getInstance().getReference().child("Employee").child("Emp1");
                             dbRef[0].removeValue();
                             Toast.makeText(getApplicationContext(),"Data Deleted Successfully",Toast.LENGTH_LONG).show();
 
