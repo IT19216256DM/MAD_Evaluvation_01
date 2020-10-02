@@ -17,7 +17,7 @@ public class MainActivity9 extends AppCompatActivity {
 
 
     EditText txtUser, txtPass;
-    Button btnlog;
+    Button btnlog,reg;
     DatabaseReference dbRef;
     Login log;
 
@@ -68,6 +68,14 @@ public class MainActivity9 extends AppCompatActivity {
                 } catch (NumberFormatException e) {
                     Toast.makeText(getApplicationContext(), "Invalid Contact Number", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        reg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(),MainActivity10.class);
+                startActivity(i);
+                clearControls();
             }
         });
     }

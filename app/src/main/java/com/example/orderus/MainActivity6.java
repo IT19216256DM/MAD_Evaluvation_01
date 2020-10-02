@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity6 extends AppCompatActivity {
 
     EditText txtUser, txtPass;
-    Button btnlog;
+    Button btnlog,reg;
     DatabaseReference dbRef;
     Login log;
 
@@ -67,6 +67,18 @@ public class MainActivity6 extends AppCompatActivity {
                 }
             }
         });
+
+        reg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i = new Intent(getApplicationContext(),MainActivity10.class);
+                startActivity(i);
+                clearControls();
+
+            }
+        });
+
     }
 
 }
