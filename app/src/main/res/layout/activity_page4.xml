@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:autofillHints=""
             android:ems="10"
-            android:hint="@string/updatedata4"
+            android:hint="@string/updatedata4new"
             android:inputType="textPersonName" />
 
         <EditText

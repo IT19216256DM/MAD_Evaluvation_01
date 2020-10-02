@@ -114,5 +114,6 @@
     <string name="retrievehint5">Preparation Time</string>
     <string name="retrievehint6">Cook Time</string>
     <string name="retrievehint7">Total time</string>
+    <string name="updatedata4new">Enter Food Owner</string>
 
 </resources>
