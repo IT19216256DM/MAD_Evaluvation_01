@@ -37,12 +37,6 @@ public class InsertPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page3);
 
-//        button = (Button) findViewById(R.id.button3);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent =new Intent(Page3.this,Page5.class);
-//                startActivity(intent);
 
         txtIteamno = findViewById(R.id.Etiteamno);
         txtTitle = findViewById(R.id.EtTitle);
@@ -102,10 +96,10 @@ public class InsertPage extends AppCompatActivity {
                     String data5 = txtPreparation.getText().toString();
                     String data6 = txtCook.getText().toString();
                     String data7 = txtTotal.getText().toString();
-//
+
                     Intent i = new Intent(getApplicationContext(), RetrievePage.class);
                     clearControls();
-//
+
                     i.putExtra("id",data1);
                     i.putExtra("ti",data2);
                     i.putExtra("pr",data3);

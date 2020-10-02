@@ -25,15 +25,7 @@ public class RetrievePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page5);
-//
-//        button = (Button) findViewById(R.id.button4);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent =new Intent(Page5.this,Page4.class);
-//                startActivity(intent);
-//            }
-//        });
+
 
         butsave = (Button) findViewById(R.id.buttonsavedetails);
         butsave.setOnClickListener(new View.OnClickListener() {

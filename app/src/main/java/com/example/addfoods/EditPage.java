@@ -14,13 +14,10 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.HashMap;
 
 
 public class EditPage extends AppCompatActivity {
 
-
-    //    EditText a,b,c,d,e,f,g;
     EditText id, title, author, price, preparation, cook, total;
     DatabaseReference dbRef;
     Button btn;
