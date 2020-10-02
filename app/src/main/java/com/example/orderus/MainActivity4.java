@@ -127,6 +127,8 @@ public class MainActivity4 extends AppCompatActivity {
                             dbRef[0].removeValue();
                             Toast.makeText(getApplicationContext(),"Data Deleted Successfully",Toast.LENGTH_LONG).show();
 
+                            Intent i = new Intent(getApplicationContext(),MainMenu.class);
+                            startActivity(i);
 
 
                         }
