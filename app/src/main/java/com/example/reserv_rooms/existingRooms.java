@@ -1,13 +1,25 @@
 package com.example.reserv_rooms;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class existingRooms extends AppCompatActivity {
     TextView txtType, txtNo, txtDes, txtPrice, txtSp, txtSports, txtRef, txtBoat, txtSight;
-
+    Button updateRoomBtn, DeleteBtn;
+    DatabaseReference databaseRoomDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +36,9 @@ public class existingRooms extends AppCompatActivity {
         txtRef = findViewById(R.id.txtRef);
         txtBoat = findViewById(R.id.txtBoat);
         txtSight = findViewById(R.id.txtSight);
+        updateRoomBtn = findViewById(R.id.updateRoomBtn);
+        DeleteBtn = findViewById(R.id.DeleteBtn);
+
 
 
         String type = getIntent().getStringExtra("type");
@@ -47,5 +62,91 @@ public class existingRooms extends AppCompatActivity {
         txtBoat.setText(boat);
         txtSight.setText(sight);
 
+
+
+        String uType = getIntent().getStringExtra("uType");
+        String uNo = getIntent().getStringExtra("uNo");
+        String uDes = getIntent().getStringExtra("uDes");
+        String uPrice = getIntent().getStringExtra("uPrice");
+        String uSp = getIntent().getStringExtra("uSp");
+        String uSports = getIntent().getStringExtra("uSports");
+        String uRef = getIntent().getStringExtra("uRef");
+        String uBoat = getIntent().getStringExtra("uBoat");
+        String uSight = getIntent().getStringExtra("uSight");
+
+
+        txtType.setText(uType);
+        txtNo.setText(uNo);
+        txtDes.setText(uDes);
+        txtPrice.setText(uPrice);
+        txtSp.setText(uSp);
+        txtSports.setText(uSports);
+        txtRef.setText(uRef);
+        txtBoat.setText(uBoat);
+        txtSight.setText(uSight);
+
+        updateRoomBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String upType = txtType.getText().toString();
+                String upNo = txtNo.getText().toString();
+                String upDes = txtDes.getText().toString();
+                String upPrice = txtPrice.getText().toString();
+                String upSp = txtSp.getText().toString();
+                String upSports = txtSports.getText().toString();
+                String upRef = txtRef.getText().toString();
+                String upBoat = txtBoat.getText().toString();
+                String upSight = txtSight.getText().toString();
+
+                Intent i = new Intent(getApplicationContext(), updateRooms.class);
+
+                i.putExtra("uType", upType);
+                i.putExtra("uNo", upNo);
+                i.putExtra("uDes", upDes);
+                i.putExtra("uPrice", upPrice);
+                i.putExtra("uSp", upSp);
+                i.putExtra("uSports", upSports);
+                i.putExtra("uRef", upRef);
+                i.putExtra("uBoat", upBoat);
+                i.putExtra("uSight", upSight);
+
+                startActivity(i);
+            }
+        });
+
+
+
+        DeleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final DatabaseReference[] databaseRoomDetails ={FirebaseDatabase.getInstance().getReference().child("Rooms")};
+                databaseRoomDetails[0].addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if(dataSnapshot.hasChild("room1")){
+                            databaseRoomDetails[0] = FirebaseDatabase.getInstance().getReference().child("Rooms").child("room1");
+                            databaseRoomDetails[0].removeValue();
+                            Toast.makeText(getApplicationContext(),"Data deleted successfully",Toast.LENGTH_SHORT).show();
+
+                        }
+                        else
+                            Toast.makeText(getApplicationContext(),"No source to delete ",Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+            }
+        });
+
+
     }
+
+
+
+
 }

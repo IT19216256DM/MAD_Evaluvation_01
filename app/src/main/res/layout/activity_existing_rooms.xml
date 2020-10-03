@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.908" />
 
     <Button
-        android:id="@+id/Delete"
+        android:id="@+id/DeleteBtn"
         android:layout_width="139dp"
         android:layout_height="53dp"
         android:background="@drawable/button3_bg"
