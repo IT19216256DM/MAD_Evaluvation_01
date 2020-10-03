@@ -9,9 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity16"></activity>
+        <activity android:name=".FoodRetrievePage"></activity>
+        <activity android:name=".FoodInsertPage" />
+        <activity android:name=".EditFoodPage" />
+        <activity android:name=".DeleteFoodPage" />
+        <activity android:name=".SearchFoodPage" />
+        <activity android:name=".MainActivity16" />
         <activity android:name=".MainActivity15" />
-        <activity android:name=".MainActivity14" />
+        <activity android:name=".FoodHomePage" />
         <activity android:name=".MainActivity13" />
         <activity android:name=".MainActivity12" />
         <activity android:name=".MainActivity11" />

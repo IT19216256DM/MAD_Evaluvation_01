@@ -247,7 +247,7 @@
         android:id="@+id/addRoomBtn"
         android:layout_width="139dp"
         android:layout_height="53dp"
-        android:background="@drawable/button3_bg"
+        android:background="@drawable/custom_button"
         android:text="Add Room"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

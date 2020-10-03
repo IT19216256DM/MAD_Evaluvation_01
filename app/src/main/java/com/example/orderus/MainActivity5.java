@@ -90,7 +90,7 @@ public class MainActivity5 extends AppCompatActivity {
         }
 
     public void openMainActivity14() {
-        Intent intent = new Intent(this, MainActivity14.class);
+        Intent intent = new Intent(this, FoodHomePage.class);
         startActivity(intent);
     }
 

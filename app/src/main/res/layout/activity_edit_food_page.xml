@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Topic10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic"
+    android:orientation="vertical"
+    tools:context=".EditFoodPage">
+
+    <TextView
+        android:id="@+id/topicupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="cursive"
+        android:text="@string/topiceditfooddata"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/uploadedImg"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/usefordisplay"
+        android:padding="20dp"
+        android:src="@drawable/picture" />
+
+    <EditText
+        android:id="@+id/details1"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="@string/updatedata1"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/details2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/updatedata2new"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/details3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/updatedata3"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/details4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/updatedata4new"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/details5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/updatedata5"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/details6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/updatedata6"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/details7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/updatedata7"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnupdatedata"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_backg"
+        android:text="@string/btnupdatenew"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        tools:text="UPDATE" />
+
+
+</LinearLayout>
+

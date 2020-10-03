@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Topic4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic"
+    android:orientation="vertical"
+    tools:context=".FoodInsertPage">
+
+    <TextView
+        android:id="@+id/addtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:fontFamily="cursive"
+        android:text="@string/topicnew"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="132dp"
+        android:layout_height="142dp"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:src="@drawable/icon" />
+
+    <EditText
+        android:id="@+id/Etiteamno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Etiteamno"
+        android:padding="10dp"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/EtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/EtTitleNew"
+        android:padding="10dp"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/Etprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintPrice"
+        android:padding="10dp"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/EtAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/EtAuthornew"
+        android:padding="10dp"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/Etpreparation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintPreparation"
+        android:padding="10dp"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/Etcook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintCooktime"
+        android:padding="10dp"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/Ettotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintTotaltime"
+        android:padding="10dp"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="19sp" />
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_backg"
+        android:text="@string/submitdata"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/holo_green_dark"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+
+</LinearLayout>
