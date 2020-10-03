@@ -41,7 +41,7 @@ public class existingRooms extends AppCompatActivity {
 
 
 
-        String type = getIntent().getStringExtra("type");
+       /* String type = getIntent().getStringExtra("type");
         String no = getIntent().getStringExtra("no");
         String des = getIntent().getStringExtra("des");
         String price = getIntent().getStringExtra("price");
@@ -63,27 +63,38 @@ public class existingRooms extends AppCompatActivity {
         txtSight.setText(sight);
 
 
-
-        String uType = getIntent().getStringExtra("uType");
-        String uNo = getIntent().getStringExtra("uNo");
-        String uDes = getIntent().getStringExtra("uDes");
-        String uPrice = getIntent().getStringExtra("uPrice");
-        String uSp = getIntent().getStringExtra("uSp");
-        String uSports = getIntent().getStringExtra("uSports");
-        String uRef = getIntent().getStringExtra("uRef");
-        String uBoat = getIntent().getStringExtra("uBoat");
-        String uSight = getIntent().getStringExtra("uSight");
+        */
 
 
-        txtType.setText(uType);
-        txtNo.setText(uNo);
-        txtDes.setText(uDes);
-        txtPrice.setText(uPrice);
-        txtSp.setText(uSp);
-        txtSports.setText(uSports);
-        txtRef.setText(uRef);
-        txtBoat.setText(uBoat);
-        txtSight.setText(uSight);
+        DatabaseReference databaseRoomDetails = FirebaseDatabase.getInstance().getReference().child("Rooms").child("room1");
+        databaseRoomDetails.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                               @Override
+                                                               public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                                                   if (dataSnapshot.hasChildren()) {
+                                                                       txtType.setText(dataSnapshot.child("type").getValue().toString());
+                                                                       txtNo.setText(dataSnapshot.child("no").getValue().toString());
+                                                                       txtDes.setText(dataSnapshot.child("des").getValue().toString());
+                                                                       txtPrice.setText(dataSnapshot.child("price").getValue().toString());
+                                                                       txtSp.setText(dataSnapshot.child("sp").getValue().toString());
+                                                                       txtSports.setText(dataSnapshot.child("sports").getValue().toString());
+                                                                       txtRef.setText(dataSnapshot.child("ref").getValue().toString());
+                                                                       txtBoat.setText(dataSnapshot.child("boat").getValue().toString());
+                                                                       txtSight.setText(dataSnapshot.child("sight").getValue().toString());
+
+
+                                                                   } else {
+                                                                       Toast.makeText(getApplicationContext(), "No source to display", Toast.LENGTH_LONG).show();
+                                                                   }
+                                                               }
+
+                                                               @Override
+                                                               public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                                                               }
+                                                           });
+
+
+
 
         updateRoomBtn.setOnClickListener(new View.OnClickListener() {
             @Override
