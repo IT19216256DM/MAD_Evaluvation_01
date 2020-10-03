@@ -11,4 +11,19 @@
     <string name="Msg9">Owner/ Contact Person : 0777548936</string>
 
 
+    <string name="insert_details">Insert Room Details</string>
+    <string name="existing_rooms">Existing Rooms</string>
+    <string name="room_type">Room Type:</string>
+    <string name="no_of_rooms">No of Rooms:</string>
+    <string name="room_price">Room Price:</string>
+    <string name="room_type_double_room">Double Room</string>
+    <string name="no_of_rooms_20_rooms">20 Rooms</string>
+    <string name="price_rs.20000">RS.20,000</string>
+    <string name="rooms">Rooms</string>
+    <string name="room_type_queen_room">Queen Room</string>
+    <string name="no_of_rooms_10_rooms">10 Rooms</string>
+    <string name="price_rs.30000">RS.30,000</string>
+    <string name="title_activity_existing_rooms">ScrollingActivity</string>
+
+
 </resources>

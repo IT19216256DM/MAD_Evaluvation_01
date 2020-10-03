@@ -13,7 +13,7 @@ import com.google.firebase.database.DatabaseReference;
 public class MainActivity5 extends AppCompatActivity {
     TextView txtId,txtName,txtAdd,txtNum,txtMail,txtOwn;
     DatabaseReference dbRef;
-   private Button button18;
+   private Button button18,but9,but8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +43,9 @@ public class MainActivity5 extends AppCompatActivity {
 
 
         button18 = findViewById(R.id.button18);
+        but8 = findViewById(R.id.button8);
+        but9 = findViewById(R.id.button9);
+
 
         button18.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,10 +53,10 @@ public class MainActivity5 extends AppCompatActivity {
 
                 String data2 = txtName.getText().toString();
 
-                Intent i = new Intent(getApplicationContext(),MainActivity8.class);
+                Intent i = new Intent(getApplicationContext(), MainActivity8.class);
                 clearControls();
 
-                i.putExtra("nm",data2);
+                i.putExtra("nm", data2);
 
                 startActivity(i);
             }
@@ -62,9 +65,38 @@ public class MainActivity5 extends AppCompatActivity {
             }
         });
 
+
+        but8 = findViewById(R.id.button8);
+        but8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMainActivity13();
+            }
+        });
+
+
+
+        but9 = findViewById(R.id.button9);
+        but9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMainActivity14();
+            }
+        });
+    }
+        public void openMainActivity13() {
+            Intent intent = new Intent(this, MainActivity13.class);
+            startActivity(intent);
+        }
+
+    public void openMainActivity14() {
+        Intent intent = new Intent(this, MainActivity14.class);
+        startActivity(intent);
+    }
+
     }
 
 
 
 
-    }
+

@@ -59,7 +59,7 @@ public class MainActivity9 extends AppCompatActivity {
 
                         Toast.makeText(getApplicationContext(), "data saved successfully", Toast.LENGTH_SHORT).show();
 
-                        Intent i = new Intent(getApplicationContext(), MainActivity8.class);
+                        Intent i = new Intent(getApplicationContext(), MainActivity12.class);
                         startActivity(i);
                         clearControls();
 
