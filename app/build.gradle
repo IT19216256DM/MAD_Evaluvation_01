@@ -36,7 +36,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'androidx.test:rules:1.2.0'
-
-
+    implementation 'com.basgeekball:awesome-validation:4.2'
 
 }

@@ -3,6 +3,9 @@ package com.it190988.payment;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -27,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference dbRef;
 
     payment_details payDetail;
+    AwesomeValidation awesomeValidation;
 
 
     @Override
@@ -41,13 +45,31 @@ public class MainActivity extends AppCompatActivity {
 
         addPayBtn = (Button) findViewById(R.id.payBtn);
 
-
         payDetail = new payment_details();
+
+        //initalize validation style
+        awesomeValidation=new AwesomeValidation(ValidationStyle.BASIC);
+
+        //Add validation for cardNumber
+        awesomeValidation.addValidation(this,R.id.etInputcardNum, RegexTemplate.NOT_EMPTY,R.string.invalid_number);
+        //Add validation
+        awesomeValidation.addValidation(this,R.id.etInputDate, RegexTemplate.NOT_EMPTY,R.string.invalid_number);
+        awesomeValidation.addValidation(this,R.id.etInputCvv, RegexTemplate.NOT_EMPTY,R.string.invalid_number);
+        awesomeValidation.addValidation(this,R.id.etInputCvv, RegexTemplate.NOT_EMPTY,R.string.invalid_number);
+        awesomeValidation.addValidation(this,R.id.etInputCardHolderName, RegexTemplate.NOT_EMPTY,R.string.invalid_number);
+
 
 
         addPayBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //check validation
+                if(awesomeValidation.validate()){
+                    //on success
+                    Toast.makeText(getApplicationContext(),"form validate sucessful",Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(getApplicationContext(),"validation failed",Toast.LENGTH_SHORT).show();
+                }
 
                         dbRef = FirebaseDatabase.getInstance().getReference().child("payment_details");
                         try {

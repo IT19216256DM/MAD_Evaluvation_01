@@ -49,6 +49,7 @@
     <string name="TotNumOrder">4</string>
     <string name="DeletePay">Delete</string>
     <string name="btnUpdate">Update</string>
+    <string name="invalid_number">please enter card number</string>
 
 
 </resources>
