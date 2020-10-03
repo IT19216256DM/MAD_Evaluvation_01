@@ -40,21 +40,9 @@ public class MainActivity extends AppCompatActivity {
         txtcardHolder = findViewById(R.id.etInputCardHolderName);
 
         addPayBtn = (Button) findViewById(R.id.payBtn);
-//        deletePayBtn=findViewById(R.id.btnDeletePay);
-//        viewPayBtn=findViewById(R.id.btnViewPay);
-//        updatePayBtn=findViewById(R.id.btnUpdatePay);
+
 
         payDetail = new payment_details();
-
-
-
-
-
-
-
-
-
-
 
 
         addPayBtn.setOnClickListener(new View.OnClickListener() {
