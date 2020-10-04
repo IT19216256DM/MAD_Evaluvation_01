@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pic"
     tools:context=".MainActivity15">
-
 
 
     <Button
@@ -111,7 +111,7 @@
         app:layout_constraintVertical_bias="0.277" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/paymenttopic"
         android:layout_width="176dp"
         android:layout_height="28dp"
         android:text="Existing Rooms"
@@ -352,5 +352,19 @@
         app:layout_constraintStart_toEndOf="@+id/whtf5"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
         tools:text="sight" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="82dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="323dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="644dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bed" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
