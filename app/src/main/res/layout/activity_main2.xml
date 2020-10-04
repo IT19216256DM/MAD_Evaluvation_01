@@ -139,9 +139,10 @@
             android:id="@+id/textView3"
             android:layout_width="221dp"
             android:layout_height="50dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="190dp"
-            android:layout_marginBottom="633dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="183dp"
+            android:layout_marginBottom="609dp"
             android:fontFamily="cursive"
             android:text="New Entry"
             android:textAlignment="center"
@@ -150,10 +151,8 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="parent" />
         <!--            android:background="@color/common_google_signin_btn_text_dark_default"-->
         android:text="New Entry"
         android:textColor="#FF4081"

@@ -4,23 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back2"
     tools:context=".FrontRoomReservation">
-
-    <TextView
-        android:id="@+id/textView2new"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginBottom="678dp"
-        android:text="@string/rooms"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
@@ -145,25 +130,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="154dp"
-        android:layout_marginLeft="154dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginRight="200dp"
-        android:layout_marginBottom="678dp"
+        android:fontFamily="cursive"
         android:text="@string/rooms"
-        android:textColor="#070707"
-        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="43sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/tv3"
@@ -308,19 +286,17 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="656dp"
-        android:layout_marginBottom="27dp"
-        android:text="Payment"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="585dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="86dp"
         android:background="@drawable/button_backg"
+        android:text="Payment"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
