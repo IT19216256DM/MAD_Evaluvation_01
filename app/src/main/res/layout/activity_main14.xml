@@ -60,7 +60,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Myfoodbtn"
+        android:id="@+id/Myfoodbtnnew"
         android:layout_width="152dp"
         android:layout_height="60dp"
         android:layout_marginStart="223dp"
@@ -68,7 +68,7 @@
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="486dp"
         android:background="@drawable/button_backg"
-        android:text="@string/orderfoods"
+        android:text="@string/Myfoodbtnnew"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="normal|italic"

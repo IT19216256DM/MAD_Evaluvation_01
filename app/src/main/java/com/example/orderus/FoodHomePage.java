@@ -60,7 +60,7 @@ public class FoodHomePage extends AppCompatActivity {
         });
 
         //3rd button
-        button = (Button) findViewById(R.id.Myfoodbtn);
+        button = (Button) findViewById(R.id.Myfoodbtnnew);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
