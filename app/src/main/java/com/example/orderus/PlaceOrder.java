@@ -2,20 +2,12 @@ package com.example.orderus;
 
 public class PlaceOrder {
 
-    private String name;
     private String id;
+    private String name;
     private String address;
-    private Integer quantity;
+    private String quantity;
     private String size;
-    private Integer notes;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    private String notes;
 
     public String getId() {
         return id;
@@ -23,6 +15,14 @@ public class PlaceOrder {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getAddress() {
@@ -33,11 +33,11 @@ public class PlaceOrder {
         this.address = address;
     }
 
-    public Integer getQuantity() {
+    public String getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(Integer quantity) {
+    public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
 
@@ -49,11 +49,11 @@ public class PlaceOrder {
         this.size = size;
     }
 
-    public Integer getNotes() {
+    public String getNotes() {
         return notes;
     }
 
-    public void setNotes(Integer notes) {
+    public void setNotes(String notes) {
         this.notes = notes;
     }
 

@@ -7,7 +7,7 @@
     tools:context=".FrontRoomReservation">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView2new"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="154dp"
@@ -311,6 +311,7 @@
         android:layout_marginTop="656dp"
         android:layout_marginBottom="27dp"
         android:text="Payment"
+        android:background="@drawable/button_backg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

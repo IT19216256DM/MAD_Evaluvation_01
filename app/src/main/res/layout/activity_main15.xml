@@ -12,9 +12,9 @@
         android:id="@+id/updateRoomBtn"
         android:layout_width="139dp"
         android:layout_height="53dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/button_backg"
         android:text="Update "
-        android:textColor="#FFFFFF"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.187"
@@ -26,9 +26,9 @@
         android:id="@+id/DeleteBtn"
         android:layout_width="139dp"
         android:layout_height="53dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/button_backg"
         android:text="Delete"
-        android:textColor="#FFFFFF"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.834"
@@ -74,7 +74,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2new"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.157" />
 
@@ -90,7 +90,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2new"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.222" />
 
@@ -106,25 +106,30 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2new"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.277" />
 
     <TextView
         android:id="@+id/paymenttopic"
-        android:layout_width="176dp"
-        android:layout_height="28dp"
+        android:layout_width="180dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="687dp"
+        android:fontFamily="cursive"
         android:text="Existing Rooms"
-        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView2new"
         android:layout_width="wrap_content"
         android:layout_height="19dp"
         android:layout_marginStart="40dp"
@@ -151,7 +156,7 @@
         android:text="type"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2new"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.095" />
 
@@ -169,7 +174,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/txtNo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2new" />
 
     <TextView
         android:id="@+id/textView6"
@@ -210,7 +215,9 @@
         android:layout_marginTop="61dp"
         android:layout_marginBottom="425dp"
         android:text="Extras"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.126"
@@ -223,13 +230,13 @@
         android:layout_width="95dp"
         android:layout_height="27dp"
         android:layout_marginStart="104dp"
-        android:layout_marginLeft="104dp"
         android:layout_marginTop="61dp"
         android:layout_marginEnd="66dp"
-        android:layout_marginRight="66dp"
         android:layout_marginBottom="425dp"
         android:text="Amount"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView14"

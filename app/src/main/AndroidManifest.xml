@@ -9,12 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FrontRoomReservation"></activity>
-        <activity android:name=".shoppingCart" />
-        <activity android:name=".profile" />
-        <activity android:name=".PaymentAcknowledgement" />
+        <activity android:name=".PaymentFood"></activity>
+        <activity android:name=".FrontRoomReservation" />
         <activity android:name=".PaymentRetrive" />
-        <activity android:name=".PaymentFood" />
         <activity android:name=".OrderFoods" />
         <activity android:name=".Frontendselection" />
         <activity android:name=".FoodRetrievePage" />

@@ -54,9 +54,9 @@ public class OrderFoods extends AppCompatActivity {
 
                 try {
                     if (TextUtils.isEmpty(txtId.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Please enter a name", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Please enter a number", Toast.LENGTH_SHORT).show();
                     else if (TextUtils.isEmpty(txtName.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Please enter a contact number", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Please enter a name", Toast.LENGTH_SHORT).show();
                     else if (TextUtils.isEmpty(txtAdd.getText().toString()))
                         Toast.makeText(getApplicationContext(), "Please enter an Address", Toast.LENGTH_SHORT).show();
                     else if(TextUtils.isEmpty(txtNum.getText().toString()))
@@ -69,9 +69,9 @@ public class OrderFoods extends AppCompatActivity {
                         po.setId(txtId.getText().toString().trim());
                         po.setName(txtName.getText().toString().trim());
                         po.setAddress(txtAdd.getText().toString().trim());
-                        po.setQuantity(Integer.parseInt(txtNum.getText().toString().trim()));
+                        po.setQuantity(txtNum.getText().toString().trim());
                         po.setSize(txtMail.getText().toString().trim());
-                        po.setNotes(Integer.parseInt(txtOwn.getText().toString().trim()));
+                        po.setNotes(txtOwn.getText().toString().trim());
 
                         // dbRef.push().setValue(emp);
                         dbRef.child("ord1").setValue(po);

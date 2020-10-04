@@ -11,10 +11,11 @@
         android:id="@+id/button17"
         android:layout_width="250dp"
         android:layout_height="159dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/button_backg"
+        android:fontFamily="sans-serif-black"
         android:text="ROOM RESERVATION"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,10 +28,11 @@
         android:id="@+id/button3"
         android:layout_width="245dp"
         android:layout_height="160dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/button_backg"
+        android:fontFamily="sans-serif-black"
         android:text="FOODS"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,22 +42,23 @@
         app:layout_constraintVertical_bias="0.448" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="199dp"
-        android:layout_height="69dp"
-        android:text="Select"
+        android:id="@+id/textView2new"
+        android:layout_width="210dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="548dp"
+        android:fontFamily="cursive"
+        android:text="@string/textView2new"
         android:textAlignment="center"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="36sp"
+        android:textSize="42sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172" />
-
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

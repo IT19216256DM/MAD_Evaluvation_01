@@ -195,6 +195,12 @@
     <string name="paymenttopic">PAYMENT</string>
     <string name="etInputDatenew">Expiry Date</string>
     <string name="textView4">Payment Details</string>
+    <string name="exdate">Expiry Date</string>
+    <string name="exdatenew">EXPIRY DATE</string>
+    <string name="chn">CARD HOLDERS NAME</string>
+    <string name="Todisplay">TODO</string>
+    <string name="textviewneww">Payment Details</string>
+    <string name="textView2new">Select your choice..</string>
 
 
 </resources>

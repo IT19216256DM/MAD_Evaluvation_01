@@ -46,7 +46,7 @@ public class Frontendselection extends AppCompatActivity {
     }
 
     public void openFoodHomePage() {
-        Intent intent = new Intent(this, FoodHomePage.class);
+        Intent intent = new Intent(this, SearchFoodPage.class);
         startActivity(intent);
     }
 

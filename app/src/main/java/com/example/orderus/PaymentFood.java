@@ -32,9 +32,9 @@ public class PaymentFood extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_food);
         txtcardNum = findViewById(R.id.etInputcardNum);
-        txtexpDate = findViewById(R.id.etInputDatenew);
+        txtexpDate = findViewById(R.id.exdatenew);
         txtcvvNum = findViewById(R.id.etInputCvv);
-        txtcardHolder = findViewById(R.id.etInputCardHolderName);
+        txtcardHolder = findViewById(R.id.chn);
 
         addPayBtn = (Button) findViewById(R.id.payBtn);
 
@@ -54,7 +54,7 @@ public class PaymentFood extends AppCompatActivity {
                     //on success
                     Toast.makeText(getApplicationContext(),"form validate sucessful",Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(getApplicationContext(),"validation failed",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"validation failed", Toast.LENGTH_SHORT).show();
                 }
 
                 dbRef = FirebaseDatabase.getInstance().getReference().child("payment_details");
@@ -79,7 +79,8 @@ public class PaymentFood extends AppCompatActivity {
                         int data3=Integer.parseInt(txtcvvNum.getText().toString());
                         String data4=txtcardHolder.getText().toString();
 
-                        Intent i=new Intent(getApplicationContext(),PaymentRetrive.class);
+                        Intent i= new Intent(getApplicationContext(),PaymentRetrive.class);
+                        startActivity(i);
                         clearControls();
 
                         i.putExtra("cardno",data1);
@@ -114,6 +115,5 @@ public class PaymentFood extends AppCompatActivity {
 //    public void openpayment2(){
 //        Intent intent=new Intent(this,payment2.class);
 //        startActivity(intent);
-//    }
 
-}
+    }
