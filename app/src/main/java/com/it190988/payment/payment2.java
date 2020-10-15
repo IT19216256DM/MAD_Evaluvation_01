@@ -46,14 +46,12 @@ public class payment2 extends AppCompatActivity {
         viewPayBtn=findViewById(R.id.btnViewPay);
         updatePayBtn=findViewById(R.id.btnUpdatePay);
 
-
-
         deletePayBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dbRef= FirebaseDatabase.getInstance().getReference().child("payDetail").child("");
                 dbRef.removeValue();
-                Toast.makeText(getApplicationContext(),"sucessfully deleteed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"sucessfully deleted", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -62,15 +60,15 @@ public class payment2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 dbRef=FirebaseDatabase.getInstance().getReference();
-                dbRef.child("payDetail").child("//pay1").child("//cardnumber").setValue(txtcardHoldername.getText().toString().trim());
-                dbRef.child("payDetail/pay1/cardnumber").setValue(txtExpirydate.getText().toString().trim());
+                dbRef.child("payDetail").child("pay1").child("cardnumber").setValue(txtCardNum.getText().toString().trim());
+                dbRef.child("payDetail/pay1/date").setValue(txtExpirydate.getText().toString().trim());
+                dbRef.child("payDetail").child("pay1").child("cvv").setValue(txtcVV.getText().toString().trim());
+                dbRef.child("payDetail/pay1/cardholdername").setValue(txtcardHoldername.getText().toString().trim());
                 Toast.makeText(getApplicationContext(),"text sucessfully updated",Toast.LENGTH_SHORT).show();
                 clearControls();
 
             }
         });
-
-
 
         viewPayBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,7 +84,7 @@ public class payment2 extends AppCompatActivity {
                             txtcVV.setText(dataSnapshot.child("cvv no").getValue().toString());
                             txtcardHoldername.setText(dataSnapshot.child("card holder name").getValue().toString());
 
-                            //Aru pani yestai garne
+
                         }
                         else
                             Toast.makeText(getApplicationContext()," Cannot find pay1", Toast.LENGTH_SHORT).show();

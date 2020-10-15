@@ -24,6 +24,7 @@ import com.google.firebase.database.DatabaseReference;
 
 public class MainActivity extends AppCompatActivity {
 
+
     EditText txtPID,txtcardNum,txtexpDate,txtcvvNum,txtcardHolder;
      private Button addPayBtn;
 
@@ -58,8 +59,6 @@ public class MainActivity extends AppCompatActivity {
         awesomeValidation.addValidation(this,R.id.etInputCvv, RegexTemplate.NOT_EMPTY,R.string.invalid_number);
         awesomeValidation.addValidation(this,R.id.etInputCardHolderName, RegexTemplate.NOT_EMPTY,R.string.invalid_number);
 
-
-
         addPayBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,8 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     Toast.makeText(getApplicationContext(),"validation failed",Toast.LENGTH_SHORT).show();
                 }
-
-                        dbRef = FirebaseDatabase.getInstance().getReference().child("payment_details");
+                    dbRef = FirebaseDatabase.getInstance().getReference().child("payment_details");
                         try {
                             if (TextUtils.isEmpty(txtcardNum.getText().toString()))
                                 Toast.makeText(getApplicationContext(), "Empty Number", Toast.LENGTH_SHORT).show();
@@ -85,11 +83,13 @@ public class MainActivity extends AppCompatActivity {
                                 payDetail.setCardNum(Integer.parseInt(txtcardNum.getText().toString().trim()));
                                 payDetail.setDate(txtexpDate.getText().toString().trim());
                                 payDetail.setCvv(Integer.parseInt(txtcvvNum.getText().toString().trim()));
-                                payDetail.setDate(txtcardHolder.getText().toString().trim());
+                                payDetail.setCardHolderName(txtcardHolder.getText().toString().trim());
+
                                 dbRef.child("Payment1").setValue(payDetail);
                                 Toast.makeText(getApplicationContext(), "Sucessfully inserted", Toast.LENGTH_SHORT).show();
                                 int data1=Integer.parseInt(txtcardNum.getText().toString());
-                                int data2=Integer.parseInt(txtexpDate.getText().toString());
+                               // int data2=Integer.parseInt(txtexpDate.getText().toString());
+                                String data2=txtexpDate.getText().toString();
                                 int data3=Integer.parseInt(txtcvvNum.getText().toString());
                                 String data4=txtcardHolder.getText().toString();
 
