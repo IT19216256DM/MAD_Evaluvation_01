@@ -21,7 +21,7 @@ public class payment2 extends AppCompatActivity {
     private Button deletePayBtn,viewPayBtn,updatePayBtn;
 
     //DatabaseReference dbRef;
-
+    private  int ID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +46,8 @@ public class payment2 extends AppCompatActivity {
         viewPayBtn=findViewById(R.id.btnViewPay);
         updatePayBtn=findViewById(R.id.btnUpdatePay);
 
+        final payment_details pay=new payment_details();
+
         deletePayBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,6 +62,8 @@ public class payment2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 dbRef=FirebaseDatabase.getInstance().getReference();
+                pay.setCardNum(Integer.parseInt(txtCardNum.getText().toString().trim()));
+                ID = pay.getCardNum();
                 dbRef.child("payDetail").child("pay1").child("cardnumber").setValue(txtCardNum.getText().toString().trim());
                 dbRef.child("payDetail/pay1/date").setValue(txtExpirydate.getText().toString().trim());
                 dbRef.child("payDetail").child("pay1").child("cvv").setValue(txtcVV.getText().toString().trim());
@@ -78,7 +82,8 @@ public class payment2 extends AppCompatActivity {
                 dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.hasChildren()){
+                      //  if (dataSnapshot.hasChildren()){
+                       for (DataSnapshot data: dataSnapshot.getChildren()){
                             txtCardNum.setText(dataSnapshot.child("cardNum").getValue().toString());
                             txtExpirydate.setText(dataSnapshot.child("expiry date").getValue().toString());
                             txtcVV.setText(dataSnapshot.child("cvv no").getValue().toString());
@@ -86,8 +91,8 @@ public class payment2 extends AppCompatActivity {
 
 
                         }
-                        else
-                            Toast.makeText(getApplicationContext()," Cannot find pay1", Toast.LENGTH_SHORT).show();
+                       // else
+                       //    Toast.makeText(getApplicationContext()," Cannot find pay1", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
